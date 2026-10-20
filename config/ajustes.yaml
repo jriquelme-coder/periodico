@@ -1,0 +1,24 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  AJUSTES GENERALES — cambia aquí el nombre, el ritmo y el estilo.
+# ─────────────────────────────────────────────────────────────────────────────
+
+periodico:
+  nombre: "AL MINUTO"                # nombre que sale en las tarjetas (provisional)
+  usuario_instagram: "@alminuto.es"  # tu @ de Instagram
+  hashtag_marca: "alminuto"          # hashtag propio (sin #), va en todos los posts
+  eslogan: "Las noticias más importantes, al minuto"
+
+publicacion:
+  posts_por_dia: 96          # 96 = uno cada 15 min. Máximo seguro con la API: 96
+  zona_horaria: "Europe/Madrid"
+  max_hashtags: 5            # Instagram solo admite 5 hashtags por post desde dic. 2025
+  diapositivas_min: 3        # tarjetas de contenido por carrusel (además de portada y cierre)
+  diapositivas_max: 5
+  horas_maximas_noticia: 18  # no usar noticias más antiguas que esto
+  margen_cuota: 2            # deja libres N posts de la cuota diaria de la API
+
+ia:
+  # Modelos de Claude (Anthropic). Puedes cambiarlos sin tocar el código
+  # también con las variables de GitHub MODELO_SELECCION / MODELO_REDACCION.
+  modelo_seleccion: "claude-haiku-5-5"   # elige la noticia (barato)
+  modelo_redaccion: "claude-sonnet-5-5"  # redacta el carrusel y el texto

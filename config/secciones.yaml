@@ -1,0 +1,222 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  SECCIONES DEL PERIÓDICO
+#  · peso: cuántas veces sale la sección en el reparto (1 = igual que las demás).
+#          Con 16 secciones de peso 1 y 96 posts/día → 6 posts por sección al día.
+#  · color: color principal de las tarjetas de la sección.
+#  · feeds: fuentes RSS de medios españoles (si alguna falla se ignora sola).
+#  · google_news: búsquedas en Google Noticias España (red de seguridad: siempre
+#          hay noticias aunque caigan los RSS). Admite operadores: OR, "frase".
+#  · enfoque: indicaciones para la IA sobre qué noticias priorizar.
+# ─────────────────────────────────────────────────────────────────────────────
+
+secciones:
+  - id: actualidad
+    nombre: Actualidad
+    peso: 1
+    color: "#E63946"
+    enfoque: "La noticia más importante y comentada de las últimas horas en España, sea del tema que sea. Prioriza última hora y sucesos de gran impacto."
+    feeds:
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada
+      - https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml
+      - https://www.lavanguardia.com/rss/home.xml
+      - https://www.20minutos.es/rss/
+      - https://www.eldiario.es/rss/
+      - https://api2.rtve.es/rss/temas_noticias.xml
+    google_news:
+      - "última hora España"
+    hashtags_base: ["noticias", "españa", "ultimahora"]
+
+  - id: politica
+    nombre: Política
+    peso: 1
+    color: "#1D3557"
+    enfoque: "Política nacional, autonómica y europea que afecte a España: Gobierno, Congreso, partidos, leyes, tribunales. Tono estrictamente neutral, sin adjetivos valorativos, recoge la posición de cada parte."
+    feeds:
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/espana/portada
+      - https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml
+      - https://www.lavanguardia.com/rss/politica.xml
+      - https://www.20minutos.es/rss/nacional/
+    google_news:
+      - "Gobierno OR Congreso OR Senado España política"
+    hashtags_base: ["politica", "españa", "congreso"]
+
+  - id: economia
+    nombre: Economía y empresas
+    peso: 1
+    color: "#2A9D8F"
+    enfoque: "Macroeconomía española, IBEX 35, grandes empresas, resultados, fusiones, inflación, BCE, sectores productivos."
+    feeds:
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/economia/portada
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/cincodias.elpais.com/portada
+      - https://e00-expansion.uecdn.es/rss/portada.xml
+      - https://e00-expansion.uecdn.es/rss/empresas.xml
+      - https://e00-elmundo.uecdn.es/elmundo/rss/economia.xml
+      - https://www.lavanguardia.com/rss/economia.xml
+    google_news:
+      - "IBEX 35 OR empresas españolas OR resultados empresariales"
+    hashtags_base: ["economia", "empresas", "negocios"]
+
+  - id: finanzas
+    nombre: Dinero y finanzas personales
+    peso: 1
+    color: "#F4A261"
+    enfoque: "Lo que afecta al bolsillo: impuestos y declaración de la renta, hipotecas y Euríbor, ahorro, depósitos, pensiones, ayudas, facturas de luz y gas, banca, inversión para particulares. Explicado de forma práctica."
+    feeds:
+      - https://e00-expansion.uecdn.es/rss/ahorro.xml
+      - https://e00-expansion.uecdn.es/rss/mercados.xml
+    google_news:
+      - "Euríbor OR hipoteca OR Hacienda OR pensiones OR ahorro bolsillo"
+      - "factura luz OR depósitos OR Seguridad Social ayudas"
+    hashtags_base: ["finanzaspersonales", "ahorro", "dinero"]
+
+  - id: vivienda
+    nombre: Vivienda e inmobiliaria
+    peso: 1
+    color: "#BC6C25"
+    enfoque: "Precio de la vivienda y del alquiler, hipotecas, ley de vivienda, obra nueva, mercado inmobiliario, okupación, vivienda pública, datos de Idealista, Fotocasa, INE, notarios y registradores."
+    feeds:
+      - https://www.idealista.com/news/rss/v2/latest-news.xml
+    google_news:
+      - "vivienda alquiler precio España"
+      - "mercado inmobiliario OR compraventa viviendas OR hipotecas INE"
+    hashtags_base: ["vivienda", "alquiler", "inmobiliaria"]
+
+  - id: empleo
+    nombre: Trabajo y empleo
+    peso: 1
+    color: "#6A4C93"
+    enfoque: "Paro, afiliación a la Seguridad Social, EPA, salario mínimo, convenios, huelgas, reforma laboral, teletrabajo, ofertas de empleo públicas y oposiciones, derechos laborales prácticos."
+    feeds: []
+    google_news:
+      - "paro OR afiliación OR EPA OR salario mínimo España"
+      - "empleo OR oposiciones OR huelga OR convenio laboral"
+    hashtags_base: ["empleo", "trabajo", "oposiciones"]
+
+  - id: sociedad
+    nombre: Sociedad
+    peso: 1
+    color: "#E76F51"
+    enfoque: "Sucesos relevantes, igualdad, juventud, mayores, demografía, inmigración, tráfico y DGT, tiempo y AEMET, justicia cotidiana, tendencias sociales."
+    feeds:
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/sociedad/portada
+      - https://www.lavanguardia.com/rss/vida.xml
+    google_news:
+      - "AEMET OR DGT OR sociedad España"
+    hashtags_base: ["sociedad", "españa", "actualidad"]
+
+  - id: salud
+    nombre: Salud y bienestar
+    peso: 1
+    color: "#06D6A0"
+    enfoque: "Sanidad pública, investigación médica, nutrición, salud mental, ejercicio, alertas sanitarias y de alimentos (AESAN), consejos basados en evidencia. Nunca des consejos médicos personales."
+    feeds:
+      - https://e00-elmundo.uecdn.es/elmundo/rss/ciencia-y-salud.xml
+    google_news:
+      - "salud OR sanidad OR estudio médico España"
+      - "AESAN alerta OR salud mental OR nutrición estudio"
+    hashtags_base: ["salud", "bienestar", "vidasana"]
+
+  - id: tecnologia
+    nombre: Tecnología e IA
+    peso: 1
+    color: "#3A86FF"
+    enfoque: "Inteligencia artificial, móviles, apps, ciberseguridad y estafas digitales, redes sociales, grandes tecnológicas, startups españolas, regulación digital europea."
+    feeds:
+      - https://www.xataka.com/index.xml
+      - https://www.genbeta.com/index.xml
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/tecnologia/portada
+      - https://www.lavanguardia.com/rss/tecnologia.xml
+    google_news:
+      - "inteligencia artificial OR ciberseguridad OR tecnología España"
+    hashtags_base: ["tecnologia", "inteligenciaartificial", "ia"]
+
+  - id: educacion
+    nombre: Educación
+    peso: 1
+    color: "#FFB703"
+    enfoque: "Colegios, institutos, universidades, FP, becas, PAU/selectividad, calendario escolar, profesorado, informes PISA, ley educativa."
+    feeds:
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/educacion/portada
+      - https://www.magisnet.com/feed/
+    google_news:
+      - "educación OR becas OR universidad OR FP OR selectividad España"
+    hashtags_base: ["educacion", "estudiantes", "universidad"]
+
+  - id: ciencia
+    nombre: Ciencia y medioambiente
+    peso: 1
+    color: "#2D6A4F"
+    enfoque: "Descubrimientos científicos, espacio, CSIC, clima, sequía, incendios, energía renovable, biodiversidad, contaminación."
+    feeds:
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/ciencia/portada
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/clima-y-medio-ambiente/portada
+    google_news:
+      - "ciencia OR CSIC OR investigadores descubrimiento"
+      - "cambio climático OR sequía OR medioambiente España"
+    hashtags_base: ["ciencia", "medioambiente", "clima"]
+
+  - id: internacional
+    nombre: Internacional
+    peso: 1
+    color: "#457B9D"
+    enfoque: "Lo más importante del mundo: Europa, Estados Unidos, Latinoamérica, conflictos, elecciones, diplomacia. Explica por qué importa a un lector español."
+    feeds:
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada
+      - https://e00-elmundo.uecdn.es/elmundo/rss/internacional.xml
+      - https://www.lavanguardia.com/rss/internacional.xml
+    google_news:
+      - "internacional OR Unión Europea OR Estados Unidos noticias"
+    hashtags_base: ["internacional", "mundo", "noticias"]
+
+  - id: cultura
+    nombre: Cultura y entretenimiento
+    peso: 1
+    color: "#C9184A"
+    enfoque: "Cine, series, música, libros, teatro, exposiciones, festivales, premios, televisión, celebridades (solo información pública y relevante, sin cotilleo invasivo)."
+    feeds:
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/cultura/portada
+      - https://e00-elmundo.uecdn.es/elmundo/rss/cultura.xml
+      - https://e00-elmundo.uecdn.es/elmundo/rss/television.xml
+      - https://www.lavanguardia.com/rss/cultura.xml
+    google_news:
+      - "cine OR series OR música OR concierto OR festival España"
+    hashtags_base: ["cultura", "cine", "musica"]
+
+  - id: deportes
+    nombre: Deportes
+    peso: 1
+    color: "#0B8A3E"
+    enfoque: "Fútbol (LaLiga, Champions, selección), baloncesto, tenis, Fórmula 1, MotoGP, ciclismo y deporte femenino. Resultados, fichajes confirmados y datos; nada de rumores sin fuente."
+    feeds:
+      - https://e00-marca.uecdn.es/rss/portada.xml
+      - https://as.com/rss/tags/ultimas_noticias.xml
+      - https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/deportes/portada
+      - https://www.lavanguardia.com/rss/deportes.xml
+    google_news:
+      - "LaLiga OR Champions OR Real Madrid OR Barcelona OR selección española"
+    hashtags_base: ["deportes", "futbol", "laliga"]
+
+  - id: gastronomia
+    nombre: Gastronomía y viajes
+    peso: 1
+    color: "#D62828"
+    enfoque: "Restaurantes, recetas de temporada, productos españoles, estrellas Michelin, turismo, escapadas, destinos, vuelos y trenes, puentes y festivos, datos de turismo."
+    feeds:
+      - https://www.directoalpaladar.com/index.xml
+      - https://www.traveler.es/feed/rss
+    google_news:
+      - "gastronomía OR restaurante OR Michelin España"
+      - "turismo OR escapada OR viajes OR vuelos España"
+    hashtags_base: ["gastronomia", "viajes", "turismo"]
+
+  - id: consumo
+    nombre: Consumo y estilo de vida
+    peso: 1
+    color: "#8338EC"
+    enfoque: "Precios del súper, OCU y FACUA, rebajas, Black Friday, derechos del consumidor, retiradas de productos, moda, belleza, hogar, mascotas, tendencias."
+    feeds:
+      - https://www.trendencias.com/index.xml
+    google_news:
+      - "OCU OR FACUA OR consumidores OR supermercado precios"
+      - "tendencias OR moda OR estilo de vida España"
+    hashtags_base: ["consumo", "estilodevida", "ahorro"]
