@@ -120,17 +120,27 @@ def _cliente() -> anthropic.Anthropic:
 
 
 def _llamar(cli, modelo: str, sistema: str, usuario: str, herramienta: dict, max_tokens: int) -> dict:
-    r = cli.messages.create(
-        model=modelo,
-        max_tokens=max_tokens,
-        system=sistema,
-        tools=[herramienta],
-        tool_choice={"type": "tool", "name": herramienta["name"]},
-        messages=[{"role": "user", "content": usuario}],
-    )
-    for bloque in r.content:
-        if bloque.type == "tool_use":
-            return bloque.input
+    import json
+
+    aviso = f"\n\nResponde ÚNICAMENTE llamando a la herramienta {herramienta['name']}."
+    for intento in range(3):
+        r = cli.messages.create(
+            model=modelo,
+            max_tokens=max(max_tokens, 6000),
+            system=sistema + aviso,
+            tools=[herramienta],
+            tool_choice={"type": "auto"},
+            messages=[{"role": "user", "content": usuario + aviso}],
+        )
+        for bloque in r.content:
+            if bloque.type == "tool_use":
+                return bloque.input
+        texto = "".join(getattr(b, "text", "") for b in r.content)
+        if "{" in texto:
+            try:
+                return json.loads(texto[texto.index("{"): texto.rindex("}") + 1])
+            except ValueError:
+                pass
     raise RuntimeError("La IA no devolvió el formato esperado")
 
 
