@@ -1,0 +1,36 @@
+yaml
+name: Renovar token de Instagram
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+jobs:
+  renovar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Renovar y guardar el token
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: python -m periodico renovar-token
+
+  mantener-activo:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          date -u +%FT%TZ > .github/ultima-actividad
+          git config user.name periodico-bot
+          git config user.email periodico-bot@users.noreply.github.com
+          git add .github/ultima-actividad
+          git commit -m "mantener activo" && git push || true
