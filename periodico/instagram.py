@@ -19,10 +19,20 @@ class ErrorInstagram(RuntimeError):
 class Instagram:
     def __init__(self) -> None:
         self.token = secreto("IG_ACCESS_TOKEN")
-        self.usuario = secreto("IG_USER_ID")
         host = os.getenv("IG_GRAPH_HOST") or "graph.instagram.com"  # o graph.facebook.com
         version = os.getenv("IG_API_VERSION") or "v26.0"
         self.base = f"https://{host}/{version}"
+        self.usuario = secreto("IG_USER_ID", obligatorio=False) or ""
+        if host == "graph.instagram.com":
+            # El ID correcto se obtiene del propio token: así no hace falta copiarlo a mano.
+            try:
+                yo = self._peticion("GET", "me", fields="user_id,username")
+                self.usuario = str(yo.get("user_id") or yo.get("id"))
+                log.info("Cuenta de Instagram: @%s (ID %s)", yo.get("username"), self.usuario)
+            except ErrorInstagram as e:
+                log.warning("No se pudo leer la cuenta del token (%s); se usa IG_USER_ID", e)
+        if not self.usuario:
+            raise ErrorInstagram("No se pudo determinar el ID de la cuenta de Instagram. Revisa IG_ACCESS_TOKEN.")
 
     def _peticion(self, metodo: str, ruta: str, **params) -> dict:
         params["access_token"] = self.token
@@ -44,7 +54,11 @@ class Instagram:
         raise ErrorInstagram(f"{err.get('message', r.text)} (código {err.get('code')}, subcódigo {err.get('error_subcode')})")
 
     def cuota(self) -> tuple[int, int]:
-        d = self._peticion("GET", f"{self.usuario}/content_publishing_limit", fields="quota_usage,config")
+        try:
+            d = self._peticion("GET", f"{self.usuario}/content_publishing_limit", fields="quota_usage,config")
+        except ErrorInstagram as e:
+            log.warning("No se pudo consultar la cuota (%s); se continúa", e)
+            return 0, 100
         fila = (d.get("data") or [{}])[0]
         uso = int(fila.get("quota_usage", 0))
         total = int((fila.get("config") or {}).get("quota_total", 100))
