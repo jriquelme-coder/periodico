@@ -163,6 +163,15 @@ def orden_publicar(args) -> int:
         _resumen_github(f"### ❌ {slot} · {post.seccion.nombre}\n**{post.titular}**\n\n```\n{e}\n```")
         raise
     entrada.update(media_id=media_id, enlace=enlace, formato=tipo)
+
+    from . import threads
+    if threads.activo():
+        try:
+            urls_th = urls if tipo == "carrusel" else almacen.subir_imagenes(slot + "-threads", rutas)
+            entrada["threads_id"] = threads.publicar(aj, post, urls_th, enlace)
+        except Exception as e:  # noqa: BLE001  (Threads nunca hace fallar el post de Instagram)
+            log.warning("No se pudo publicar en Threads: %s", e)
+
     almacen.registrar(entrada)
     almacen.guardar(conservar_media=False)
     log.info("✅ Publicado (%s) %s %s", tipo, media_id, enlace)
@@ -222,22 +231,38 @@ def orden_fuentes(args) -> int:
     return 0
 
 
+def _guardar_secreto(nombre: str, valor: str) -> bool:
+    print(f"::add-mask::{valor}")
+    if not os.getenv("GH_TOKEN"):
+        print(f"Falta el secreto GH_PAT para guardar {nombre} automáticamente.")
+        return False
+    subprocess.run(["gh", "secret", "set", nombre, "--body", valor,
+                    "--repo", os.environ["GITHUB_REPOSITORY"]], check=True)
+    return True
+
+
 def orden_renovar_token(args) -> int:
     from .instagram import renovar_token_instagram
 
+    ok = True
     if (os.getenv("IG_GRAPH_HOST") or "graph.instagram.com") != "graph.instagram.com":
-        print("Token de Facebook Login/usuario de sistema: no necesita renovación.")
-        return 0
-    nuevo, segundos = renovar_token_instagram(config.secreto("IG_ACCESS_TOKEN"))
-    print(f"::add-mask::{nuevo}")
-    if os.getenv("GH_TOKEN"):
-        subprocess.run(["gh", "secret", "set", "IG_ACCESS_TOKEN", "--body", nuevo,
-                        "--repo", os.environ["GITHUB_REPOSITORY"]], check=True)
-        print(f"Token renovado y guardado. Caduca en {segundos // 86400} días.")
+        print("Instagram: token de Facebook Login/usuario de sistema, no necesita renovación.")
     else:
-        print("Token renovado, pero falta el secreto GH_PAT para guardarlo automáticamente.")
-        return 1
-    return 0
+        nuevo, segundos = renovar_token_instagram(config.secreto("IG_ACCESS_TOKEN"))
+        ok &= _guardar_secreto("IG_ACCESS_TOKEN", nuevo)
+        print(f"Instagram: token renovado. Caduca en {segundos // 86400} días.")
+
+    if os.getenv("THREADS_ACCESS_TOKEN"):
+        from .threads import renovar_token
+
+        try:
+            nuevo, segundos = renovar_token(os.environ["THREADS_ACCESS_TOKEN"])
+            ok &= _guardar_secreto("THREADS_ACCESS_TOKEN", nuevo)
+            print(f"Threads: token renovado. Caduca en {segundos // 86400} días.")
+        except Exception as e:  # noqa: BLE001
+            # Un token recién creado (menos de 24 h) aún no se puede renovar: no es grave.
+            print(f"Threads: no se pudo renovar todavía ({e}).")
+    return 0 if ok else 1
 
 
 def main() -> int:
