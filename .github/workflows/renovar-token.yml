@@ -2,7 +2,7 @@ name: Renovar token de Instagram
 
 on:
   schedule:
-    - cron: "17 4 * * 1"
+    - cron: "17 4 * * 1"   # todos los lunes a las 04:17 UTC
   workflow_dispatch:
 
 jobs:
@@ -17,11 +17,13 @@ jobs:
       - name: Renovar y guardar el token
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
         run: python -m periodico renovar-token
 
   mantener-activo:
+    # GitHub desactiva los workflows programados de repos sin actividad en 60 días.
     runs-on: ubuntu-latest
     permissions:
       contents: write
