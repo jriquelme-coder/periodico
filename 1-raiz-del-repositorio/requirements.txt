@@ -1,0 +1,8 @@
+anthropic>=0.40
+feedparser>=6.0
+requests>=2.31
+pillow>=10.0
+numpy>=1.26
+pyyaml>=6.0
+trafilatura>=1.12
+imageio-ffmpeg>=0.5

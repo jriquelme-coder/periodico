@@ -1,0 +1,71 @@
+name: Publicar en Instagram
+
+on:
+  schedule:
+    # Cada 15 minutos. La segunda línea es un "respaldo": GitHub a veces retrasa
+    # u omite ejecuciones; si el hueco ya está publicado, la ejecución termina sola.
+    - cron: "2,17,32,47 * * * *"
+    - cron: "9,24,39,54 * * * *"
+  workflow_dispatch:
+    inputs:
+      seccion:
+        description: "Forzar sección (id, p. ej. vivienda). Vacío = la que toque"
+        required: false
+        default: ""
+      formato:
+        description: "Formato: auto (según la hora), carrusel o reel"
+        type: choice
+        options: [auto, carrusel, reel]
+        default: auto
+      prueba:
+        description: "Modo prueba (genera las tarjetas pero NO publica)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Publicar el post que toca
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          CLOUDINARY_URL: ${{ secrets.CLOUDINARY_URL }}
+          IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST }}
+          IG_API_VERSION: ${{ vars.IG_API_VERSION }}
+          MODELO_SELECCION: ${{ vars.MODELO_SELECCION }}
+          MODELO_REDACCION: ${{ vars.MODELO_REDACCION }}
+          POSTS_POR_DIA: ${{ vars.POSTS_POR_DIA }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.seccion }}" ]; then ARGS="$ARGS --seccion ${{ inputs.seccion }} --forzar"; fi
+          if [ "${{ inputs.prueba }}" = "true" ]; then ARGS="$ARGS --prueba"; fi
+          if [ -n "${{ inputs.formato }}" ]; then ARGS="$ARGS --formato ${{ inputs.formato }}"; fi
+          if [ "${{ vars.PAUSADO }}" = "si" ] && [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "Publicación pausada (variable PAUSADO=si)"; exit 0
+          fi
+          python -m periodico publicar $ARGS
+      - name: Guardar tarjetas generadas
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: post-${{ github.run_id }}
+          path: salida/
+          retention-days: 3
+          if-no-files-found: ignore
