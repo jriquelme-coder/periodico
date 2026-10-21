@@ -2,6 +2,8 @@ name: Publicar en Instagram
 
 on:
   schedule:
+    # Cada 15 minutos. La segunda línea es un "respaldo": GitHub a veces retrasa
+    # u omite ejecuciones; si el hueco ya está publicado, la ejecución termina sola.
     - cron: "2,17,32,47 * * * *"
     - cron: "9,24,39,54 * * * *"
   workflow_dispatch:
@@ -10,6 +12,11 @@ on:
         description: "Forzar sección (id, p. ej. vivienda). Vacío = la que toque"
         required: false
         default: ""
+      formato:
+        description: "Formato: auto (según la hora), carrusel o reel"
+        type: choice
+        options: [auto, carrusel, reel]
+        default: auto
       prueba:
         description: "Modo prueba (genera las tarjetas pero NO publica)"
         type: boolean
@@ -25,7 +32,7 @@ concurrency:
 jobs:
   publicar:
     runs-on: ubuntu-latest
-    timeout-minutes: 14
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -49,6 +56,7 @@ jobs:
           ARGS=""
           if [ -n "${{ inputs.seccion }}" ]; then ARGS="$ARGS --seccion ${{ inputs.seccion }} --forzar"; fi
           if [ "${{ inputs.prueba }}" = "true" ]; then ARGS="$ARGS --prueba"; fi
+          if [ -n "${{ inputs.formato }}" ]; then ARGS="$ARGS --formato ${{ inputs.formato }}"; fi
           if [ "${{ vars.PAUSADO }}" = "si" ] && [ "${{ github.event_name }}" = "schedule" ]; then
             echo "Publicación pausada (variable PAUSADO=si)"; exit 0
           fi
