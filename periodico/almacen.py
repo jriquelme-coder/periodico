@@ -53,6 +53,7 @@ class Almacen:
         self.local = RAIZ / ".datos"
         self.estado: dict = {"publicaciones": []}
         self._media: dict[str, Path] = {}  # ruta_publicada -> fichero local
+        self.sha = ""
 
     # ── estado ──────────────────────────────────────────────────────────
     def cargar(self) -> dict:
@@ -83,8 +84,15 @@ class Almacen:
         limite = (datetime.now(timezone.utc) - timedelta(days=DIAS_HISTORIAL)).isoformat()
         self.estado["publicaciones"] = [p for p in pubs if p.get("fecha", "") >= limite]
 
+    def registrar_fallo(self, noticia_id: str | None, error: str) -> None:
+        fallos = self.estado.setdefault("fallidas", [])
+        if noticia_id:
+            fallos.append({"id": noticia_id, "error": error[:300],
+                           "fecha": datetime.now(timezone.utc).isoformat()})
+        self.estado["fallidas"] = fallos[-300:]
+
     def ids_usados(self) -> set[str]:
-        s = set()
+        s = {f["id"] for f in self.estado.get("fallidas", []) if f.get("id")}
         for p in self.estado["publicaciones"]:
             s.update(x for x in (p.get("noticia_id"), p.get("url_fuente")) if x)
         return s
@@ -104,8 +112,20 @@ class Almacen:
         if not self.github:
             return [str(r.resolve()) for r in rutas]
         repo = os.environ["GITHUB_REPOSITORY"]
-        urls = [f"https://raw.githubusercontent.com/{repo}/{RAMA}/{k}" for k in self._media]
-        self._esperar_publicas(urls)
+        urls = []
+        for k in self._media:
+            raw = f"https://raw.githubusercontent.com/{repo}/{RAMA}/{k}"
+            if k.endswith(".mp4") and self.sha:
+                # Los vídeos se sirven por jsDelivr (CDN gratuito) con el tipo correcto video/mp4
+                cdn = f"https://cdn.jsdelivr.net/gh/{repo}@{self.sha}/{k}"
+                try:
+                    self._esperar_publicas([cdn])
+                    urls.append(cdn)
+                    continue
+                except RuntimeError:
+                    log.warning("jsDelivr no respondió; se usa raw.githubusercontent")
+            self._esperar_publicas([raw])
+            urls.append(raw)
         return urls
 
     def _esperar_publicas(self, urls: list[str]) -> None:
@@ -135,7 +155,7 @@ class Almacen:
         firma = hashlib.sha1(firma_base.encode()).hexdigest()
         with ruta.open("rb") as fh:
             r = requests.post(
-                f"https://api.cloudinary.com/v1_1/{nube}/image/upload",
+                f"https://api.cloudinary.com/v1_1/{nube}/{'video' if ruta.suffix == '.mp4' else 'image'}/upload",
                 data={"api_key": clave, "timestamp": ts, "public_id": public_id,
                       "folder": "periodico", "signature": firma},
                 files={"file": fh}, timeout=60,
@@ -163,6 +183,7 @@ class Almacen:
             _git("config", "user.email", "periodico-bot@users.noreply.github.com", cwd=t)
             _git("add", "-A", cwd=t)
             _git("commit", "-q", "-m", f"estado {datetime.now(timezone.utc):%Y-%m-%d %H:%M}", cwd=t)
+            self.sha = _git("rev-parse", "HEAD", cwd=t).stdout.strip()
             for intento in range(3):
                 r = _git("push", "-q", "--force", _remoto(), f"{RAMA}:{RAMA}", cwd=t, check=False)
                 if r.returncode == 0:

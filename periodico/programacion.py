@@ -55,5 +55,23 @@ def tabla_del_dia(aj: Ajustes, fecha: datetime | None = None) -> list[tuple[str,
     filas = []
     for i, s in enumerate(plan):
         m = i * aj.minutos_intervalo
-        filas.append((f"{m // 60:02d}:{m % 60:02d}", s.nombre))
+        extra = " [REEL]" if formato(aj, i) == "reel" else (" [+story]" if lleva_story(aj, i) else "")
+        filas.append((f"{m // 60:02d}:{m % 60:02d}", s.nombre + extra))
     return filas
+
+
+def formato(aj: Ajustes, indice: int) -> str:
+    """'reel' si el hueco coincide con una de las horas de reels; si no, 'carrusel'."""
+    for h in aj.horas_reels:
+        hh, mm = (int(x) for x in str(h).split(":"))
+        if (hh * 60 + mm) // aj.minutos_intervalo == indice:
+            return "reel"
+    return "carrusel"
+
+
+def lleva_story(aj: Ajustes, indice: int) -> bool:
+    if aj.stories_por_dia <= 0:
+        return False
+    paso = max(1, aj.posts_por_dia // aj.stories_por_dia)
+    # desplazado medio paso para no coincidir con medianoche
+    return indice % paso == paso // 2 and formato(aj, indice) == "carrusel"

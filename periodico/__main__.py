@@ -34,6 +34,18 @@ def _resumen_github(texto: str) -> None:
             fh.write(texto + "\n")
 
 
+def _pausar_por_limite(almacen: Almacen, slot: str, e: Exception) -> int:
+    """Instagram limita las llamadas por hora: se pausa 60 min sin dar error (y sin correos)."""
+    from datetime import timedelta
+
+    hasta = (datetime.now(timezone.utc) + timedelta(minutes=60)).isoformat()
+    almacen.estado["pausa_hasta"] = hasta
+    almacen.guardar(conservar_media=False)
+    log.warning("%s → pausa automática de 60 minutos", e)
+    _resumen_github(f"⏸️ {slot}: Instagram ha limitado las llamadas a la API. Pausa automática de 60 min.")
+    return 0
+
+
 def crear_post(aj, seccion, almacen: Almacen, ahora):
     usados = almacen.ids_usados()
     recientes = almacen.titulos_recientes()
@@ -47,7 +59,11 @@ def crear_post(aj, seccion, almacen: Almacen, ahora):
         if not elegida:
             return None
         principal, relacionadas = elegida
-        post = redactor.redactar(aj, seccion, principal, relacionadas, ahora)
+        try:
+            post = redactor.redactar(aj, seccion, principal, relacionadas, ahora)
+        except Exception as e:  # noqa: BLE001
+            log.warning("Fallo al redactar «%s»: %s", principal.titulo, e)
+            post = None
         if post:
             return post
         descartadas.add(candidatas.index(principal))
@@ -73,10 +89,17 @@ def orden_publicar(args) -> int:
 
     ig = None
     if not prueba:
-        from .instagram import Instagram
+        from .instagram import Instagram, LimiteInstagram
 
-        ig = Instagram()
-        uso, total = ig.cuota()
+        pausa = almacen.estado.get("pausa_hasta", "")
+        if pausa and datetime.now(timezone.utc).isoformat() < pausa and not args.forzar:
+            log.info("Instagram pidió esperar (límite de la API) hasta %s. Se salta este hueco.", pausa)
+            return 0
+        try:
+            ig = Instagram()
+            uso, total = ig.cuota()
+        except LimiteInstagram as e:
+            return _pausar_por_limite(almacen, slot, e)
         log.info("Cuota de Instagram: %d/%d en las últimas 24 h", uso, total)
         if uso >= total - aj.margen_cuota:
             log.warning("Cuota diaria casi agotada; se salta este hueco.")
@@ -108,18 +131,54 @@ def orden_publicar(args) -> int:
         "medios": post.medios,
     }
 
+    from . import video
+    from .instagram import publicar_reel, publicar_story
+
+    tipo = programacion.formato(aj, int(slot.split("#")[1]))
+    if args.formato in ("reel", "carrusel"):
+        tipo = args.formato
+
     if prueba:
+        if tipo == "reel":
+            video.generar_reel(aj, post, rutas, carpeta / "reel")
+        video.story(aj, post, rutas[0], carpeta)
         print("\n" + "─" * 60 + f"\n{post.caption}\n" + "─" * 60)
         _resumen_github(f"### 🧪 Prueba {slot} · {post.seccion.nombre}\n**{post.titular}**\n\n```\n{post.caption}\n```")
         return 0
 
-    urls = almacen.subir_imagenes(slot, rutas)
-    media_id, enlace = ig.publicar_carrusel(urls, post.caption)
-    entrada.update(media_id=media_id, enlace=enlace)
+    try:
+        if tipo == "reel":
+            mp4 = video.generar_reel(aj, post, rutas, carpeta / "reel")
+            urls = almacen.subir_imagenes(slot, [mp4, rutas[0]])
+            media_id, enlace = publicar_reel(ig, urls[0], post.caption)
+        else:
+            urls = almacen.subir_imagenes(slot, rutas)
+            media_id, enlace = ig.publicar_carrusel(urls, post.caption)
+    except LimiteInstagram as e:
+        return _pausar_por_limite(almacen, slot, e)
+    except Exception as e:
+        # Se apunta la noticia como fallida para no reintentar la misma en bucle
+        almacen.registrar_fallo(entrada.get("noticia_id"), str(e))
+        almacen.guardar(conservar_media=False)
+        _resumen_github(f"### ❌ {slot} · {post.seccion.nombre}\n**{post.titular}**\n\n```\n{e}\n```")
+        raise
+    entrada.update(media_id=media_id, enlace=enlace, formato=tipo)
     almacen.registrar(entrada)
     almacen.guardar(conservar_media=False)
-    log.info("✅ Publicado %s %s", media_id, enlace)
-    _resumen_github(f"### ✅ {slot} · {post.seccion.nombre}\n**{post.titular}**\n\n{enlace}")
+    log.info("✅ Publicado (%s) %s %s", tipo, media_id, enlace)
+    _resumen_github(f"### ✅ {slot} · {post.seccion.nombre} · {tipo}\n**{post.titular}**\n\n{enlace}")
+
+    if tipo == "carrusel" and programacion.lleva_story(aj, int(slot.split("#")[1])):
+        try:
+            uso, total = ig.cuota()
+            if uso < total - aj.margen_cuota:
+                img = video.story(aj, post, rutas[0], carpeta)
+                url = almacen.subir_imagenes(slot + "-story", [img])[0]
+                publicar_story(ig, url)
+                almacen.guardar(conservar_media=False)
+                log.info("✅ Story publicada")
+        except Exception as e:  # noqa: BLE001  (la story nunca hace fallar el post)
+            log.warning("No se pudo publicar la story: %s", e)
     return 0
 
 
@@ -189,6 +248,7 @@ def main() -> int:
     p.add_argument("--seccion")
     p.add_argument("--forzar", action="store_true")
     p.add_argument("--prueba", action="store_true")
+    p.add_argument("--formato", choices=["auto", "carrusel", "reel"], default="auto")
     sub.add_parser("demo")
     sub.add_parser("plan")
     sub.add_parser("fuentes")

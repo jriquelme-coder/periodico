@@ -31,6 +31,8 @@ class Ajustes:
     hashtag_marca: str
     eslogan: str
     posts_por_dia: int
+    stories_por_dia: int
+    horas_reels: list[str]
     zona_horaria: str
     max_hashtags: int
     diapositivas_min: int
@@ -70,6 +72,8 @@ def cargar() -> Ajustes:
         hashtag_marca=(os.getenv("HASHTAG_MARCA") or p["hashtag_marca"]).lstrip("#"),
         eslogan=p.get("eslogan", ""),
         posts_por_dia=int(os.getenv("POSTS_POR_DIA") or pub["posts_por_dia"]),
+        stories_por_dia=int(os.getenv("STORIES_POR_DIA") or pub.get("stories_por_dia", 0)),
+        horas_reels=list(pub.get("horas_reels") or []),
         zona_horaria=pub["zona_horaria"],
         max_hashtags=int(pub["max_hashtags"]),
         diapositivas_min=int(pub["diapositivas_min"]),

@@ -167,7 +167,11 @@ Elige la MEJOR noticia para publicar ahora en esta sección: la más relevante e
     if i < 0 or i >= len(candidatas) or i in descartadas:
         log.info("La IA no encontró noticia adecuada: %s", res.get("motivo"))
         return None
-    rel = [candidatas[j] for j in res.get("relacionadas", []) if 0 <= j < len(candidatas) and j != i]
+    rel_ids = res.get("relacionadas") or []
+    if isinstance(rel_ids, str):
+        import re as _re
+        rel_ids = [int(x) for x in _re.findall(r"-?\d+", rel_ids)]
+    rel = [candidatas[int(j)] for j in rel_ids if str(j).lstrip("-").isdigit() and 0 <= int(j) < len(candidatas) and int(j) != i]
     principal = candidatas[i]
     rel = (principal.relacionadas + rel)[:4]
     log.info("Elegida [%d] %s — %s", i, principal.titulo, res.get("motivo"))
@@ -195,7 +199,7 @@ MATERIAL:
 
 Crea el post-carrusel de Instagram sobre esta noticia: portada con titular, {aj.diapositivas_min}-{aj.diapositivas_max} tarjetas que se pasan con el dedo, y el texto explicativo del pie."""
     cli = _cliente()
-    d = _llamar(cli, aj.modelo_redaccion, sistema, usuario, _herramienta_carrusel(aj), 3500)
+    d = _normalizar(_llamar(cli, aj.modelo_redaccion, sistema, usuario, _herramienta_carrusel(aj), 3500))
     if not d.get("apto", False):
         log.info("Noticia descartada por la IA: %s", d.get("motivo_no_apto"))
         return None
@@ -220,6 +224,36 @@ Crea el post-carrusel de Instagram sobre esta noticia: portada con titular, {aj.
     )
     post.caption = componer_caption(aj, post)
     return post
+
+
+def _normalizar(d: dict) -> dict:
+    """Algunos modelos devuelven listas u objetos como texto JSON: se convierten."""
+    import json
+
+    for k in ("diapositivas", "dato_clave", "hashtags", "medios"):
+        v = d.get(k)
+        if isinstance(v, str):
+            try:
+                d[k] = json.loads(v)
+            except ValueError:
+                d[k] = [x.strip() for x in v.replace("#", " ").replace(",", " ").split()] if k in ("hashtags", "medios") else None
+    if isinstance(d.get("apto"), str):
+        d["apto"] = d["apto"].strip().lower() in ("true", "si", "sí", "1")
+    d.setdefault("apto", True)
+    diapos = [x for x in (d.get("diapositivas") or []) if isinstance(x, dict) and x.get("texto")]
+    if not diapos:
+        d["apto"] = False
+        d["motivo_no_apto"] = "Respuesta sin diapositivas válidas"
+    d["diapositivas"] = [{"titulo": str(x.get("titulo", "")), "texto": str(x["texto"])} for x in diapos]
+    if not isinstance(d.get("dato_clave"), dict):
+        d["dato_clave"] = {}
+    for k in ("antetitulo", "titular", "entradilla", "en_una_frase", "resumen_post", "por_que_importa", "pregunta"):
+        d[k] = str(d.get(k) or "")
+    if not d["titular"]:
+        d["apto"] = False
+    d["hashtags"] = [str(h) for h in (d.get("hashtags") or [])]
+    d["medios"] = [str(m) for m in (d.get("medios") or [])]
+    return d
 
 
 def _corta(t: str, n: int) -> str:
