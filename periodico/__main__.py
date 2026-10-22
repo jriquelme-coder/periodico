@@ -71,6 +71,14 @@ def crear_post(aj, seccion, almacen: Almacen, ahora):
 
 
 def orden_publicar(args) -> int:
+    """Publica la noticia del hueco actual en Instagram y en Threads.
+
+    Las dos redes son independientes: si Instagram está en pausa por su límite
+    de llamadas o falla, la noticia se publica igualmente en Threads.
+    """
+    from . import threads, video
+    from .instagram import Instagram, LimiteInstagram, publicar_reel, publicar_story
+
     aj = config.cargar()
     tz = ZoneInfo(aj.zona_horaria)
     ahora = datetime.now(tz)
@@ -79,7 +87,7 @@ def orden_publicar(args) -> int:
         seccion = aj.seccion(args.seccion)
     prueba = args.prueba or not os.getenv("IG_ACCESS_TOKEN")
     if prueba:
-        log.info("MODO PRUEBA: no se publicará en Instagram")
+        log.info("MODO PRUEBA: no se publicará en ninguna red")
 
     almacen = Almacen()
     almacen.cargar()
@@ -87,25 +95,32 @@ def orden_publicar(args) -> int:
         log.info("El hueco %s ya está publicado. Nada que hacer.", slot)
         return 0
 
+    # ── ¿Está Instagram disponible en este hueco? ───────────────────────
     ig = None
+    motivo_sin_ig = ""
     if not prueba:
-        from .instagram import Instagram, LimiteInstagram
-
         pausa = almacen.estado.get("pausa_hasta", "")
         if pausa and datetime.now(timezone.utc).isoformat() < pausa and not args.forzar:
-            log.info("Instagram pidió esperar (límite de la API) hasta %s. Se salta este hueco.", pausa)
-            return 0
-        try:
-            ig = Instagram()
-            uso, total = ig.cuota()
-        except LimiteInstagram as e:
-            return _pausar_por_limite(almacen, slot, e)
-        log.info("Cuota de Instagram: %d/%d en las últimas 24 h", uso, total)
-        if uso >= total - aj.margen_cuota:
-            log.warning("Cuota diaria casi agotada; se salta este hueco.")
-            _resumen_github(f"⏸️ {slot}: cuota de Instagram agotada ({uso}/{total})")
+            motivo_sin_ig = f"Instagram en pausa por su límite hasta {pausa}"
+        else:
+            try:
+                ig = Instagram()
+                uso, total = ig.cuota()
+                log.info("Cuota de Instagram: %d/%d en las últimas 24 h", uso, total)
+                if uso >= total - aj.margen_cuota:
+                    ig, motivo_sin_ig = None, f"cuota diaria de Instagram agotada ({uso}/{total})"
+            except LimiteInstagram as e:
+                _pausar_por_limite(almacen, slot, e)
+                ig, motivo_sin_ig = None, "Instagram ha alcanzado su límite de llamadas (pausa de 60 min)"
+            except Exception as e:  # noqa: BLE001
+                ig, motivo_sin_ig = None, f"Instagram no disponible: {e}"
+        if motivo_sin_ig:
+            log.info("%s.", motivo_sin_ig)
+        if not ig and not threads.activo():
+            log.info("Ninguna red disponible: se salta este hueco.")
             return 0
 
+    # ── Noticia y tarjetas ──────────────────────────────────────────────
     log.info("Hueco %s → sección %s", slot, seccion.nombre)
     post = crear_post(aj, seccion, almacen, ahora)
     if not post and seccion.id != "actualidad":
@@ -121,19 +136,6 @@ def orden_publicar(args) -> int:
     (carpeta / "caption.txt").write_text(post.caption, encoding="utf-8")
     log.info("Generadas %d tarjetas en %s", len(rutas), carpeta)
 
-    entrada = {
-        "slot": slot,
-        "fecha": datetime.now(timezone.utc).isoformat(),
-        "seccion": post.seccion.id,
-        "titular": post.titular,
-        "noticia_id": post.noticia.id if post.noticia else "",
-        "url_fuente": post.noticia.url if post.noticia else "",
-        "medios": post.medios,
-    }
-
-    from . import video
-    from .instagram import publicar_reel, publicar_story
-
     tipo = programacion.formato(aj, int(slot.split("#")[1]))
     if args.formato in ("reel", "carrusel"):
         tipo = args.formato
@@ -146,48 +148,77 @@ def orden_publicar(args) -> int:
         _resumen_github(f"### 🧪 Prueba {slot} · {post.seccion.nombre}\n**{post.titular}**\n\n```\n{post.caption}\n```")
         return 0
 
-    try:
-        if tipo == "reel":
-            mp4 = video.generar_reel(aj, post, rutas, carpeta / "reel")
-            urls = almacen.subir_imagenes(slot, [mp4, rutas[0]])
-            media_id, enlace = publicar_reel(ig, urls[0], post.caption)
-        else:
-            urls = almacen.subir_imagenes(slot, rutas)
-            media_id, enlace = ig.publicar_carrusel(urls, post.caption)
-    except LimiteInstagram as e:
-        return _pausar_por_limite(almacen, slot, e)
-    except Exception as e:
-        # Se apunta la noticia como fallida para no reintentar la misma en bucle
-        almacen.registrar_fallo(entrada.get("noticia_id"), str(e))
-        almacen.guardar(conservar_media=False)
-        _resumen_github(f"### ❌ {slot} · {post.seccion.nombre}\n**{post.titular}**\n\n```\n{e}\n```")
-        raise
-    entrada.update(media_id=media_id, enlace=enlace, formato=tipo)
+    entrada = {
+        "slot": slot,
+        "fecha": datetime.now(timezone.utc).isoformat(),
+        "seccion": post.seccion.id,
+        "titular": post.titular,
+        "noticia_id": post.noticia.id if post.noticia else "",
+        "url_fuente": post.noticia.url if post.noticia else "",
+        "medios": post.medios,
+        "formato": tipo,
+    }
+    resumen = [f"### {slot} · {post.seccion.nombre} · {tipo}", f"**{post.titular}**", ""]
 
-    from . import threads
+    # ── Instagram ───────────────────────────────────────────────────────
+    enlace = ""
+    urls_imagenes: list[str] = []
+    error_ig = None
+    if ig:
+        try:
+            if tipo == "reel":
+                mp4 = video.generar_reel(aj, post, rutas, carpeta / "reel")
+                urls = almacen.subir_imagenes(slot, [mp4, rutas[0]])
+                media_id, enlace = publicar_reel(ig, urls[0], post.caption)
+            else:
+                urls_imagenes = almacen.subir_imagenes(slot, rutas)
+                media_id, enlace = ig.publicar_carrusel(urls_imagenes, post.caption)
+            entrada.update(media_id=media_id, enlace=enlace)
+            log.info("✅ Publicado en Instagram (%s) %s %s", tipo, media_id, enlace)
+            resumen.append(f"✅ Instagram: {enlace}")
+        except LimiteInstagram as e:
+            _pausar_por_limite(almacen, slot, e)
+            resumen.append("⏸️ Instagram: límite de llamadas, pausa de 60 min")
+        except Exception as e:  # noqa: BLE001
+            error_ig = e
+            log.error("Fallo al publicar en Instagram: %s", e)
+            resumen.append(f"❌ Instagram: `{e}`")
+    else:
+        resumen.append(f"⏸️ Instagram: {motivo_sin_ig}")
+
+    # ── Threads (independiente de Instagram) ───────────────────────────
     if threads.activo():
         try:
-            urls_th = urls if tipo == "carrusel" else almacen.subir_imagenes(slot + "-threads", rutas)
-            entrada["threads_id"] = threads.publicar(aj, post, urls_th, enlace)
-        except Exception as e:  # noqa: BLE001  (Threads nunca hace fallar el post de Instagram)
+            if not urls_imagenes:
+                urls_imagenes = almacen.subir_imagenes(slot + "-threads", rutas)
+            entrada["threads_id"] = threads.publicar(aj, post, urls_imagenes, enlace)
+            resumen.append("✅ Threads: publicado")
+        except Exception as e:  # noqa: BLE001
             log.warning("No se pudo publicar en Threads: %s", e)
+            resumen.append(f"❌ Threads: `{e}`")
 
-    almacen.registrar(entrada)
+    publicado = bool(entrada.get("media_id") or entrada.get("threads_id"))
+    if publicado:
+        almacen.registrar(entrada)
+    elif error_ig:
+        # Se apunta la noticia como fallida para no reintentar la misma en bucle
+        almacen.registrar_fallo(entrada.get("noticia_id"), str(error_ig))
     almacen.guardar(conservar_media=False)
-    log.info("✅ Publicado (%s) %s %s", tipo, media_id, enlace)
-    _resumen_github(f"### ✅ {slot} · {post.seccion.nombre} · {tipo}\n**{post.titular}**\n\n{enlace}")
+    _resumen_github("\n".join(resumen))
 
-    if tipo == "carrusel" and programacion.lleva_story(aj, int(slot.split("#")[1])):
+    # ── Story (solo si Instagram ha publicado un carrusel) ─────────────
+    if ig and entrada.get("media_id") and tipo == "carrusel" and programacion.lleva_story(aj, int(slot.split("#")[1])):
         try:
-            uso, total = ig.cuota()
-            if uso < total - aj.margen_cuota:
-                img = video.story(aj, post, rutas[0], carpeta)
-                url = almacen.subir_imagenes(slot + "-story", [img])[0]
-                publicar_story(ig, url)
-                almacen.guardar(conservar_media=False)
-                log.info("✅ Story publicada")
+            img = video.story(aj, post, rutas[0], carpeta)
+            url = almacen.subir_imagenes(slot + "-story", [img])[0]
+            publicar_story(ig, url)
+            almacen.guardar(conservar_media=False)
+            log.info("✅ Story publicada")
         except Exception as e:  # noqa: BLE001  (la story nunca hace fallar el post)
             log.warning("No se pudo publicar la story: %s", e)
+
+    if error_ig and not publicado:
+        raise error_ig
     return 0
 
 
