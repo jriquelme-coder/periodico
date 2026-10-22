@@ -76,7 +76,11 @@ def orden_publicar(args) -> int:
     Las dos redes son independientes: si Instagram está en pausa por su límite
     de llamadas o falla, la noticia se publica igualmente en Threads.
     """
-    from . import telegram, threads, video
+    from . import threads, video
+    try:  # Telegram es opcional: si falta telegram.py, el resto sigue funcionando
+        from . import telegram
+    except ImportError:
+        telegram = None
     from .instagram import Instagram, LimiteInstagram, publicar_reel, publicar_story
 
     aj = config.cargar()
@@ -116,7 +120,7 @@ def orden_publicar(args) -> int:
                 ig, motivo_sin_ig = None, f"Instagram no disponible: {e}"
         if motivo_sin_ig:
             log.info("%s.", motivo_sin_ig)
-        if not ig and not threads.activo() and not telegram.activo():
+        if not ig and not threads.activo() and not (telegram and telegram.activo()):
             log.info("Ninguna red disponible: se salta este hueco.")
             return 0
 
@@ -199,7 +203,7 @@ def orden_publicar(args) -> int:
             resumen.append(f"❌ Threads: `{e}`")
 
     # ── Telegram (independiente) ──────────────────────────────────────
-    if telegram.activo():
+    if telegram and telegram.activo():
         try:
             mp4 = carpeta / "reel" / "reel.mp4"
             entrada["telegram_id"] = telegram.publicar(aj, post, rutas, enlace, mp4 if tipo == "reel" else None)
