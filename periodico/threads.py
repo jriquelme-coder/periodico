@@ -96,18 +96,27 @@ def publicar(aj: Ajustes, p: Post, urls_imagenes: list[str], enlace_instagram: s
     # Primero el CDN (más fiable para el robot de Threads) y luego la dirección directa
     opciones = [[a, u] if i < len(alt) and (a := alt[i]) else [u] for i, u in enumerate(urls_imagenes[:20])]
     contenedor = None
-    try:
-        if len(opciones) >= 2:
-            hijos = [_crear(uid, o, media_type="IMAGE", is_carousel_item="true") for o in opciones]
-            contenedor = _peticion("POST", f"{uid}/threads", media_type="CAROUSEL", children=",".join(hijos), text=t)["id"]
-        elif opciones:
-            contenedor = _crear(uid, opciones[0], media_type="IMAGE", text=t)
-        if contenedor:
+    # 1º carrusel completo (cada imagen tiene que estar procesada antes de unirlas)
+    if len(opciones) >= 2:
+        try:
+            hijos = [_crear(uid, o, media_type="IMAGE", is_carousel_item="true") for o in opciones[:10]]
+            for h in hijos:
+                _esperar(h, 120)
+            contenedor = _peticion("POST", f"{uid}/threads", media_type="CAROUSEL",
+                                   children=",".join(hijos), text=t)["id"]
             _esperar(contenedor)
-    except ErrorThreads as e:
-        # Si las imágenes no se pueden subir, al menos se publica la noticia como texto
-        log.warning("Imágenes no disponibles para Threads (%s); se publica solo el texto", e)
-        contenedor = None
+        except ErrorThreads as e:
+            log.warning("Carrusel no disponible en Threads (%s); se prueba solo con la portada", e)
+            contenedor = None
+    # 2º solo la portada
+    if not contenedor and opciones:
+        try:
+            contenedor = _crear(uid, opciones[0], media_type="IMAGE", text=t)
+            _esperar(contenedor)
+        except ErrorThreads as e:
+            log.warning("Imágenes no disponibles para Threads (%s); se publica solo el texto", e)
+            contenedor = None
+    # 3º solo texto
     if not contenedor:
         contenedor = _peticion("POST", f"{uid}/threads", media_type="TEXT", text=t)["id"]
         _esperar(contenedor)
