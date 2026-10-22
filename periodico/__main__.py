@@ -76,7 +76,7 @@ def orden_publicar(args) -> int:
     Las dos redes son independientes: si Instagram está en pausa por su límite
     de llamadas o falla, la noticia se publica igualmente en Threads.
     """
-    from . import threads, video
+    from . import telegram, threads, video
     from .instagram import Instagram, LimiteInstagram, publicar_reel, publicar_story
 
     aj = config.cargar()
@@ -116,7 +116,7 @@ def orden_publicar(args) -> int:
                 ig, motivo_sin_ig = None, f"Instagram no disponible: {e}"
         if motivo_sin_ig:
             log.info("%s.", motivo_sin_ig)
-        if not ig and not threads.activo():
+        if not ig and not threads.activo() and not telegram.activo():
             log.info("Ninguna red disponible: se salta este hueco.")
             return 0
 
@@ -191,13 +191,24 @@ def orden_publicar(args) -> int:
         try:
             if not urls_imagenes:
                 urls_imagenes = almacen.subir_imagenes(slot + "-threads", rutas)
-            entrada["threads_id"] = threads.publicar(aj, post, urls_imagenes, enlace)
+            entrada["threads_id"] = threads.publicar(aj, post, urls_imagenes, enlace,
+                                                     almacen.urls_cdn(urls_imagenes))
             resumen.append("✅ Threads: publicado")
         except Exception as e:  # noqa: BLE001
             log.warning("No se pudo publicar en Threads: %s", e)
             resumen.append(f"❌ Threads: `{e}`")
 
-    publicado = bool(entrada.get("media_id") or entrada.get("threads_id"))
+    # ── Telegram (independiente) ──────────────────────────────────────
+    if telegram.activo():
+        try:
+            mp4 = carpeta / "reel" / "reel.mp4"
+            entrada["telegram_id"] = telegram.publicar(aj, post, rutas, enlace, mp4 if tipo == "reel" else None)
+            resumen.append("✅ Telegram: publicado")
+        except Exception as e:  # noqa: BLE001
+            log.warning("No se pudo publicar en Telegram: %s", e)
+            resumen.append(f"❌ Telegram: `{e}`")
+
+    publicado = bool(entrada.get("media_id") or entrada.get("threads_id") or entrada.get("telegram_id"))
     if publicado:
         almacen.registrar(entrada)
     elif error_ig:

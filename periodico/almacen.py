@@ -128,6 +128,16 @@ class Almacen:
             urls.append(raw)
         return urls
 
+    def urls_cdn(self, urls: list[str]) -> list[str]:
+        """Las mismas imágenes servidas por jsDelivr (CDN gratuito), para redes cuyo
+        robot no descarga bien desde raw.githubusercontent.com."""
+        if not (self.github and self.sha):
+            return []
+        repo = os.environ["GITHUB_REPOSITORY"]
+        prefijo = f"https://raw.githubusercontent.com/{repo}/{RAMA}/"
+        return [f"https://cdn.jsdelivr.net/gh/{repo}@{self.sha}/{u[len(prefijo):]}" if u.startswith(prefijo) else ""
+                for u in urls]
+
     def _esperar_publicas(self, urls: list[str]) -> None:
         for u in urls:
             for intento in range(20):

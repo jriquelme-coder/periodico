@@ -68,20 +68,49 @@ def texto(aj: Ajustes, p: Post, enlace_instagram: str) -> str:
     return _corta(cuerpo, cuerpo_max) + cola
 
 
-def publicar(aj: Ajustes, p: Post, urls_imagenes: list[str], enlace_instagram: str) -> str:
+def _crear(uid: str, urls: list[str], **params) -> str:
+    """Crea un contenedor de imagen probando varias direcciones de la misma imagen.
+
+    El error 2207052 («Media download has failed») significa que el robot de
+    Threads no pudo descargar la imagen. Suele ser pasajero o depender del
+    servidor, así que se reintenta y se prueba con otra dirección (CDN).
+    """
+    ultimo: Exception | None = None
+    for intento in range(3):
+        for url in urls:
+            try:
+                return _peticion("POST", f"{uid}/threads", image_url=url, **params)["id"]
+            except ErrorThreads as e:
+                ultimo = e
+                log.warning("Threads no pudo descargar %s (intento %d): %s", url, intento + 1, e)
+        time.sleep(15 * (intento + 1))
+    raise ultimo or ErrorThreads("No se pudo crear el contenedor")
+
+
+def publicar(aj: Ajustes, p: Post, urls_imagenes: list[str], enlace_instagram: str,
+             urls_alternativas: list[str] | None = None) -> str:
     usuario = _peticion("GET", "me", fields="id,username")
     uid = usuario["id"]
     t = texto(aj, p, enlace_instagram)
-    urls = urls_imagenes[:20]
-    if len(urls) >= 2:
-        hijos = [_peticion("POST", f"{uid}/threads", media_type="IMAGE", image_url=u, is_carousel_item="true")["id"]
-                 for u in urls]
-        contenedor = _peticion("POST", f"{uid}/threads", media_type="CAROUSEL", children=",".join(hijos), text=t)["id"]
-    elif urls:
-        contenedor = _peticion("POST", f"{uid}/threads", media_type="IMAGE", image_url=urls[0], text=t)["id"]
-    else:
+    alt = urls_alternativas or []
+    # Primero el CDN (más fiable para el robot de Threads) y luego la dirección directa
+    opciones = [[a, u] if i < len(alt) and (a := alt[i]) else [u] for i, u in enumerate(urls_imagenes[:20])]
+    contenedor = None
+    try:
+        if len(opciones) >= 2:
+            hijos = [_crear(uid, o, media_type="IMAGE", is_carousel_item="true") for o in opciones]
+            contenedor = _peticion("POST", f"{uid}/threads", media_type="CAROUSEL", children=",".join(hijos), text=t)["id"]
+        elif opciones:
+            contenedor = _crear(uid, opciones[0], media_type="IMAGE", text=t)
+        if contenedor:
+            _esperar(contenedor)
+    except ErrorThreads as e:
+        # Si las imágenes no se pueden subir, al menos se publica la noticia como texto
+        log.warning("Imágenes no disponibles para Threads (%s); se publica solo el texto", e)
+        contenedor = None
+    if not contenedor:
         contenedor = _peticion("POST", f"{uid}/threads", media_type="TEXT", text=t)["id"]
-    _esperar(contenedor)
+        _esperar(contenedor)
     media_id = _peticion("POST", f"{uid}/threads_publish", creation_id=contenedor)["id"]
     log.info("✅ Publicado en Threads (@%s): %s", usuario.get("username"), media_id)
     return media_id
