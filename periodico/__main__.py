@@ -161,6 +161,8 @@ def orden_publicar(args) -> int:
         "url_fuente": post.noticia.url if post.noticia else "",
         "medios": post.medios,
         "formato": tipo,
+        "entradilla": post.entradilla,
+        "hora": f"{ahora:%H:%M}",
     }
     resumen = [f"### {slot} · {post.seccion.nombre} · {tipo}", f"**{post.titular}**", ""]
 
@@ -219,6 +221,16 @@ def orden_publicar(args) -> int:
         # Se apunta la noticia como fallida para no reintentar la misma en bucle
         almacen.registrar_fallo(entrada.get("noticia_id"), str(error_ig))
     almacen.guardar(conservar_media=False)
+
+    # ── Página web «Las noticias de hoy» ───────────────────────────────
+    if publicado:
+        try:
+            from . import web
+
+            url_web = web.actualizar(aj, almacen.estado, rutas[0], slot)
+            resumen.append(f"🌐 Página del día: {url_web}")
+        except Exception as e:  # noqa: BLE001  (la web nunca hace fallar la publicación)
+            log.warning("No se pudo actualizar la página del día: %s", e)
     _resumen_github("\n".join(resumen))
 
     # ── Story (solo si Instagram ha publicado un carrusel) ─────────────
