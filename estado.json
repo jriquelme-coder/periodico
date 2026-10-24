@@ -1,0 +1,2228 @@
+{
+ "publicaciones": [
+  {
+   "slot": "2026-10-20#090",
+   "fecha": "2026-10-20T20:39:46.993202+00:00",
+   "seccion": "actualidad",
+   "titular": "Hallan el cadáver de un hombre en Menorca: sexta víctima de la dana Adam",
+   "noticia_id": "589e683b6c402429",
+   "url_fuente": "https://www.eldiario.es/illes-balears/sociedad/bomberos-rescatan-cadaver-hombre-aguas-menorca-plena-alerta-dana-adam_1_13600768.html",
+   "medios": [
+    "elDiario.es",
+    "Ultima Hora",
+    "Portada"
+   ],
+   "media_id": "17866489203675282",
+   "enlace": "https://www.instagram.com/p/DeutpLbkrcx/"
+  },
+  {
+   "slot": "2026-10-20#091",
+   "fecha": "2026-10-20T20:56:11.023897+00:00",
+   "seccion": "actualidad",
+   "titular": "Detenido en Madrid un profesor por presuntas agresiones sexuales a menores",
+   "noticia_id": "1afb305664eba2fc",
+   "url_fuente": "https://www.elmundo.es/madrid/2026/10/20/6ad755a1fdddff26718b459b.html",
+   "medios": [
+    "El Mundo",
+    "La Vanguardia",
+    "20minutos"
+   ],
+   "media_id": "18002756588796255",
+   "enlace": "https://www.instagram.com/p/DeuvgbAmkCl/"
+  },
+  {
+   "slot": "2026-10-20#092",
+   "fecha": "2026-10-20T21:01:14.912363+00:00",
+   "seccion": "politica",
+   "titular": "Feijóo confirma que el PP habla con Vox para las elecciones al Senado",
+   "noticia_id": "5c22509c32939c2d",
+   "url_fuente": "https://www.elmundo.es/elecciones/elecciones-generales/2026/10/20/6ad710e4e9cf4aed3d8b459a.html",
+   "medios": [
+    "El Mundo",
+    "20minutos",
+    "Agencia Atlas"
+   ],
+   "media_id": "17983792265903949",
+   "enlace": "https://www.instagram.com/p/DeuwGXZmRZF/"
+  },
+  {
+   "slot": "2026-10-20#094",
+   "fecha": "2026-10-20T21:33:35.405348+00:00",
+   "seccion": "actualidad",
+   "titular": "El Gobierno promete subir el sueldo a los funcionarios en 2027, pero sin fecha",
+   "noticia_id": "8b23e81e9ce4a280",
+   "url_fuente": "https://elpais.com/economia/2026-10-20/el-gobierno-garantiza-a-los-sindicatos-que-subira-el-sueldo-a-los-funcionarios-un-5-en-2027.html",
+   "medios": [
+    "EL PAÍS",
+    "20minutos",
+    "El Mundo"
+   ],
+   "media_id": "18129282733699442",
+   "enlace": "https://www.instagram.com/p/DeuzzJwiWWU/"
+  },
+  {
+   "slot": "2026-10-21#000",
+   "fecha": "2026-10-20T22:11:13.757440+00:00",
+   "seccion": "sociedad",
+   "titular": "La salud de los españoles empeora, según los últimos datos del INE",
+   "noticia_id": "06be1944b03fa939",
+   "url_fuente": "https://elpais.com/sociedad/2026-10-20/la-salud-de-los-espanoles-empeora-suben-las-enfermedades-cronicas-la-depresion-y-la-obesidad-pero-baja-el-tabaquismo.html",
+   "medios": [
+    "EL PAÍS",
+    "Cadena SER"
+   ],
+   "media_id": "18114826196144746",
+   "enlace": "https://www.instagram.com/p/Deu4GWMmMtG/"
+  },
+  {
+   "slot": "2026-10-21#003",
+   "fecha": "2026-10-20T22:46:00.293696+00:00",
+   "seccion": "educacion",
+   "titular": "Los docentes madrileños marchan de negro contra las cargas policiales",
+   "noticia_id": "80e489386f5f3157",
+   "url_fuente": "https://elpais.com/educacion/2026-10-20/los-profesores-en-huelga-cambian-el-verde-por-el-negro-en-rechazo-a-la-carga-policial-somos-docentes-no-delincuentes.html",
+   "medios": [
+    "El País",
+    "Infobae"
+   ],
+   "media_id": "18202766308335725",
+   "enlace": "https://www.instagram.com/p/Deu8FHmIL2i/"
+  },
+  {
+   "slot": "2026-10-21#005",
+   "fecha": "2026-10-20T23:20:34.534584+00:00",
+   "seccion": "internacional",
+   "titular": "Los partidos franceses señalan a Mélenchon por la violencia",
+   "noticia_id": "6a27cf6c9fe1cfc7",
+   "url_fuente": "https://elpais.com/internacional/2026-10-20/los-partidos-de-francia-se-unen-para-culpar-al-izquierdista-melenchon-de-la-violencia.html",
+   "medios": [
+    "EL PAÍS",
+    "El Mundo"
+   ],
+   "media_id": "18207401638374762",
+   "enlace": "https://www.instagram.com/p/DevAChdGHc3/"
+  },
+  {
+   "slot": "2026-10-21#006",
+   "fecha": "2026-10-20T23:42:47.003940+00:00",
+   "seccion": "cultura",
+   "titular": "Patti Smith vuelve a hechizar a España 50 años después de su debut",
+   "noticia_id": "f54687598c772d4b",
+   "url_fuente": "https://elpais.com/cultura/2026-10-20/patti-smith-50-anos-despues-de-su-debut-en-espana-mistica-compromiso-poesia-y-puro-rock-and-roll.html",
+   "medios": [
+    "El País",
+    "El Mundo",
+    "LNE"
+   ],
+   "media_id": "18111979856179465",
+   "enlace": "https://www.instagram.com/p/DevCkoSAPKo/"
+  },
+  {
+   "slot": "2026-10-21#007",
+   "fecha": "2026-10-20T23:49:13.491022+00:00",
+   "seccion": "deportes",
+   "titular": "El PSG tumba al Barça (4-2) y le inflige su primera derrota de la temporada",
+   "noticia_id": "e5676a3d64f219f5",
+   "url_fuente": "https://elpais.com/deportes/futbol/2026-10-20/psg-barcelona-en-directo-el-partido-de-la-champions-league-en-vivo.html",
+   "medios": [
+    "EL PAÍS",
+    "RTVE.es",
+    "Diario Las Américas",
+    "Deportes"
+   ],
+   "media_id": "18133443469665732",
+   "enlace": "https://www.instagram.com/p/DevDUNRmwQo/"
+  },
+  {
+   "slot": "2026-10-21#008",
+   "fecha": "2026-10-21T00:06:44.978361+00:00",
+   "seccion": "gastronomia",
+   "titular": "La Gala Michelin de Huesca se retrasa al 1 de diciembre",
+   "noticia_id": "5a842572c9efe985",
+   "url_fuente": "https://www.directoalpaladar.com/viajes/elecciones-generales-obligan-a-cambiar-fecha-gala-michelin-huesca-anne-igartiburu-sera-presentadora",
+   "medios": [
+    "Directo al Paladar",
+    "El Economista",
+    "El Pirineo Aragonés",
+    "La Razón",
+    "Última Hora"
+   ],
+   "media_id": "18227738269327042",
+   "enlace": "https://www.instagram.com/p/DevFVClGfJN/"
+  },
+  {
+   "slot": "2026-10-21#022",
+   "fecha": "2026-10-21T09:09:23.600523+00:00",
+   "seccion": "cultura",
+   "titular": "Castilla y León veta ayudas al cine con \"adoctrinamiento ideológico\"",
+   "noticia_id": "3a11e4bdfd55e47e",
+   "url_fuente": "https://www.lavanguardia.com/cultura/20261020/11663931/vox-veta-castilla-leon-ayudas-cine-adoctrine-ideologicamente-castilla-leon-convoca-ayudas-cine-limitadas-proyectos-adoctrinamiento-castilla-leon-convoca-ayudas-cine-limitadas-proyectos-adoctrinamiento-castilla-leon-convoca-ayudas.html",
+   "medios": [
+    "eldiario.es",
+    "Infobae"
+   ],
+   "media_id": "18089066729278534",
+   "enlace": "https://www.instagram.com/reel/DewDa-qj2xE/",
+   "formato": "reel",
+   "threads_id": "17914214916492384"
+  },
+  {
+   "slot": "2026-10-21#040",
+   "fecha": "2026-10-21T18:02:11.016908+00:00",
+   "seccion": "gastronomia",
+   "titular": "Asturias, Bilbao y Santiago, los aeropuertos más puntuales de España",
+   "noticia_id": "7d2144319b5e95b2",
+   "url_fuente": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQS1xc3lkUk5FSG5SRTB4RlduSUY1WkR6ZDk2cmVrWHlfOUZGLUJZS0ZtYXFEaTE4ZmM1dldzVWVJNDF3WVhuY2FFLU5nLXplU1JZMXJ2aERkRVRuNjVieWQ4aDJFcHZzVl91VHFuT2ktRGZ4SDdDNldBS2tRaVNVcEZtQy1zVmhuU0ZvNl9iVGpvbXR6UE1yNktER2RjTjZRaHVYa2o0NEJHSVh3dWxyaU8yNVFmaklhZDdDTURvTXhzUF9n0gHKAUFVX3lxTE9sUzZxN2VCVlhMSUszUDFJejE4OEs0Nk1ZdzBQU0hkOVE1cERDbE9LUTRKSXMtRF81aFQtUFd3ZWhSQVZBU3BmTXVYNFo3eHlLNkhQQUhQUHNGbFozazJvZnNibXI1Rm5VNUhXZnJKbUdVaDlnWEJqdG12ZmVCR056WTE0TUhxcEZkNTBxek1GRzdrUEF2V3JwU0dGcjRUWmR5SkVWd3ZtY2RMWGRwM2ZoU29aS2pqNFJCYzNBMlh3MTRBOXl6NnU4dEE?oc=5",
+   "medios": [
+    "Galiciae",
+    "Alacant Extra",
+    "El Español",
+    "Radio Nervión",
+    "Cadena SER"
+   ],
+   "media_id": "17955536094031217",
+   "enlace": "https://www.instagram.com/reel/DexAZY4iHli/",
+   "formato": "reel",
+   "threads_id": "17910442722476644"
+  },
+  {
+   "slot": "2026-10-22#018",
+   "fecha": "2026-10-22T07:18:37.258086+00:00",
+   "seccion": "educacion",
+   "titular": "Profesores y salud mental adolescente: mucha responsabilidad, poco apoyo",
+   "noticia_id": "94cbdf36cbe78d45",
+   "url_fuente": "https://www.magisnet.com/2026/10/profesores-ante-la-salud-mental-adolescente-mucha-responsabilidad-y-poco-apoyo/",
+   "medios": [
+    "Magisnet"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18117606227109192"
+  },
+  {
+   "slot": "2026-10-22#019",
+   "fecha": "2026-10-22T07:57:26.550521+00:00",
+   "seccion": "ciencia",
+   "titular": "Más de 350 científicos respaldan a María Neira para dirigir la OMS",
+   "noticia_id": "dd701b81085d3bb6",
+   "url_fuente": "https://elpais.com/clima-y-medio-ambiente/2026-10-22/mas-de-350-expertos-en-calidad-del-aire-se-movilizan-para-que-maria-neira-lidere-la-oms.html",
+   "medios": [
+    "EL PAÍS",
+    "La Vanguardia",
+    "Gaceta Médica"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18096800336130637"
+  },
+  {
+   "slot": "2026-10-22#020",
+   "fecha": "2026-10-22T08:05:23.311966+00:00",
+   "seccion": "internacional",
+   "titular": "EEUU ordena salir de Arabia Saudí a su personal diplomático no esencial",
+   "noticia_id": "60b86822988eefb9",
+   "url_fuente": "https://www.elmundo.es/internacional/2026/10/21/6ad92bc521efa0dd0c8b458d.html",
+   "medios": [
+    "El Mundo",
+    "Perfil",
+    "El Debate",
+    "AFP"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18640534060039013"
+  },
+  {
+   "slot": "2026-10-22#021",
+   "fecha": "2026-10-22T08:35:01.856265+00:00",
+   "seccion": "cultura",
+   "titular": "Paco Rabal se cuenta con su propia voz en '200 vidas', el documental",
+   "noticia_id": "dc6fce1020186cc9",
+   "url_fuente": "https://elpais.com/cultura/2026-10-22/paco-rabal-la-memoria-de-una-leyenda-a-traves-de-su-propia-voz.html",
+   "medios": [
+    "El País",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18218932645355570"
+  },
+  {
+   "slot": "2026-10-22#022",
+   "fecha": "2026-10-22T09:19:14.715576+00:00",
+   "seccion": "deportes",
+   "titular": "Paula Blasi, ganadora de la Vuelta, ficha por el Movistar hasta 2029",
+   "noticia_id": "dfe955396f5830c0",
+   "url_fuente": "https://www.lavanguardia.com/deportes/ciclismo/20261021/11664807/paula-blasi-ficha-movistar-necesitaba-equipo-ambicioso.html",
+   "medios": [
+    "Marca"
+   ],
+   "formato": "reel",
+   "media_id": "18114403102852760",
+   "enlace": "https://www.instagram.com/reel/DeypVb8DB_R/",
+   "threads_id": "18096878084401295"
+  },
+  {
+   "slot": "2026-10-22#024",
+   "fecha": "2026-10-22T10:04:19.449339+00:00",
+   "seccion": "actualidad",
+   "titular": "España e Italia acuerdan acabar con los controles fronterizos",
+   "noticia_id": "3d040aee4c03a3f6",
+   "url_fuente": "https://www.eldiario.es/internacional/espana-acuerda-italia-poner-controles-fronterizos-impuestos-crisis-ceuta_1_13605485.html",
+   "medios": [
+    "elDiario.es",
+    "La Razón",
+    "EL PAÍS",
+    "Europa Press"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17968786707191267"
+  },
+  {
+   "slot": "2026-10-22#025",
+   "fecha": "2026-10-22T10:39:18.146505+00:00",
+   "seccion": "actualidad",
+   "titular": "Ayuso defiende su reunión con Milei en un pleno marcado por la huelga educativa",
+   "noticia_id": "a2d27582ec20d7c6",
+   "url_fuente": "https://www.eldiario.es/madrid/ayuso-defiende-abrazo-milei-oposicion-responde-reunido-veces-profesores_1_13605631.html",
+   "medios": [
+    "elDiario.es",
+    "EL PAÍS"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17907412608666501"
+  },
+  {
+   "slot": "2026-10-22#026",
+   "fecha": "2026-10-22T11:14:40.247104+00:00",
+   "seccion": "politica",
+   "titular": "Tres nacionalizados por la ley de nietos recurren ante el Supremo la suspensión de su voto",
+   "noticia_id": "caf536aadacdfb99",
+   "url_fuente": "https://elpais.com/espana/elecciones-generales/2026-10-22/tres-afectados-por-la-ley-de-nietos-ante-el-supremo-el-derecho-al-sufragio-no-se-puede-suspender.html",
+   "medios": [
+    "El País",
+    "El Mundo",
+    "20minutos",
+    "Política"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18110907500593297"
+  },
+  {
+   "slot": "2026-10-22#027",
+   "fecha": "2026-10-22T11:30:30.324862+00:00",
+   "seccion": "economia",
+   "titular": "Barclays recortará 5.000 empleos por el uso de la IA",
+   "noticia_id": "111d105020dfa358",
+   "url_fuente": "https://cincodias.elpais.com/companias/2026-10-22/barclays-recortara-5000-empleos-el-5-de-su-fuerza-laboral-para-reducir-costes-por-la-ia.html",
+   "medios": [
+    "Cinco Días",
+    "Expansión",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17960987355215731"
+  },
+  {
+   "slot": "2026-10-22#028",
+   "fecha": "2026-10-22T12:07:00.664322+00:00",
+   "seccion": "actualidad",
+   "titular": "La Guardia Civil registra dos naves de una ONG en Ceuta y hay un detenido",
+   "noticia_id": "f799c8f1d0816dfc",
+   "url_fuente": "https://www.elmundo.es/espana/2026/10/22/6ad9ec33fc6c83d4428b45a7.html",
+   "medios": [
+    "El Mundo",
+    "Antena 3 Noticias"
+   ],
+   "formato": "reel",
+   "threads_id": "18097697423421479"
+  },
+  {
+   "slot": "2026-10-22#029",
+   "fecha": "2026-10-22T12:47:12.846572+00:00",
+   "seccion": "vivienda",
+   "titular": "Los caseros con varias viviendas, ligados al 18% de la subida del alquiler",
+   "noticia_id": "89bb601f159212a9",
+   "url_fuente": "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/22/920151-los-caseros-con-varias-viviendas-concentran-el-18-de-la-subida-del-alquiler-entre",
+   "medios": [
+    "idealista/news",
+    "Heraldo",
+    "Infobae",
+    "Andalucía Información"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17909513304573315"
+  },
+  {
+   "slot": "2026-10-22#030",
+   "fecha": "2026-10-22T13:00:42.674673+00:00",
+   "seccion": "empleo",
+   "titular": "CCOO y UGT convocan huelga general el 11 de noviembre",
+   "noticia_id": "5752b2d9d9b742a8",
+   "url_fuente": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPeU9uZUhQMU9nMkNzLVR1SWJTSng5eFFES2RpU3c1SmNvcWdlbWlhVzFtb0RwZE5fWjN4ZU0zaUp0REprVC1vNjh6aFdycVNZdHNab05wcGdFZXFXYUZMU2twckROUE95MWNkbkpXakZ3QWt6M2U4WG9MSWxGSHJheXp5SVNaYlFRS180LW9wWGZCN0JON3lBXzZBMExTODJUYzB2b2NiUWg5cVnSAbABQVVfeXFMUENFdzhrVE5mYUYyWjQ0Yk5JQ3VGTmFoVUdHdU96U0dRQWxvMXp3ZTNnRWVtcktVeGpDWEpvOTJyamxybFZ2TTFVWW41QWFTbmZLSWpkR1FuLUdRN0loNDlzZ2NtUF83bGFHVnN5ZnlleUlXVG5pYWVkRllOeHBhelZsalpXZlBZb09tMlh2OFBFYkJ1c3FwU3BCSmRmVjZSOFRJM3dSLVdsTkRSQzctN20?oc=5",
+   "medios": [
+    "El Correo",
+    "ENCLM",
+    "La Opinión de Murcia",
+    "COPE"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17998953107826324"
+  },
+  {
+   "slot": "2026-10-22#031",
+   "fecha": "2026-10-22T13:33:04.451643+00:00",
+   "seccion": "sociedad",
+   "titular": "Solo 2 de cada 1.000 cementerios en España admiten entierros musulmanes",
+   "noticia_id": "a45ede247bb407e5",
+   "url_fuente": "https://elpais.com/sociedad/2026-10-22/solo-dos-de-cada-mil-cementerios-en-espana-estan-habilitados-para-entierros-musulmanes.html",
+   "medios": [
+    "EL PAÍS"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17926619778203635"
+  },
+  {
+   "slot": "2026-10-22#032",
+   "fecha": "2026-10-22T14:16:53.937947+00:00",
+   "seccion": "actualidad",
+   "titular": "Feijóo elige a Álvarez de Toledo y Sémper como números 2 y 3 por Madrid",
+   "noticia_id": "f89f61034e03bd74",
+   "url_fuente": "https://elpais.com/espana/2026-10-22/alvarez-de-toledo-y-semper-seran-los-numeros-dos-y-tres-de-feijoo-en-la-lista-por-madrid.html",
+   "medios": [
+    "EL PAÍS",
+    "EL MUNDO",
+    "La Razón",
+    "20minutos",
+    "elDiario.es"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17895803658681713"
+  },
+  {
+   "slot": "2026-10-22#033",
+   "fecha": "2026-10-22T14:58:50.425663+00:00",
+   "seccion": "tecnologia",
+   "titular": "Fallos críticos en PHP obligan a desconectar webs y servicios públicos",
+   "noticia_id": "54de74ac1e7b9edf",
+   "url_fuente": "https://elpais.com/tecnologia/2026-10-22/millones-de-intentos-de-ataque-en-pocas-horas-tras-destaparse-fallos-graves-en-miles-de-webs.html",
+   "medios": [
+    "EL PAÍS",
+    "Xataka"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18143138719716089"
+  },
+  {
+   "slot": "2026-10-22#034",
+   "fecha": "2026-10-22T15:07:57.361771+00:00",
+   "seccion": "educacion",
+   "titular": "Las universidades públicas de Madrid irán a la huelga el 4 y 5 de noviembre",
+   "noticia_id": "36953f3d6acb757f",
+   "url_fuente": "https://elpais.com/educacion/2026-10-22/las-universidades-de-madrid-iran-a-la-huelga-el-4-y-5-de-noviembre-por-la-estafa-del-acuerdo-de-financiacion-de-ayuso.html",
+   "medios": [
+    "EL PAÍS"
+   ],
+   "formato": "reel",
+   "threads_id": "18171067810482169"
+  },
+  {
+   "slot": "2026-10-22#035",
+   "fecha": "2026-10-22T15:41:36.226322+00:00",
+   "seccion": "actualidad",
+   "titular": "España está en \"alerta\" por el virus shamonda, pero Agricultura pide calma",
+   "noticia_id": "1b90088ab4210b4a",
+   "url_fuente": "https://www.eldiario.es/sociedad/agricultura-asegura-espana-alerta-virus-shamonda-pide-calma_1_13607437.html",
+   "medios": [
+    "elDiario.es",
+    "El Mundo",
+    "20minutos",
+    "Ultima Hora",
+    "EFE"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17934989145144717"
+  },
+  {
+   "slot": "2026-10-22#036",
+   "fecha": "2026-10-22T16:21:23.253568+00:00",
+   "seccion": "internacional",
+   "titular": "El Tribunal Penal Internacional gana el premio Sájarov 2026",
+   "noticia_id": "93e73d9c2d51bfef",
+   "url_fuente": "https://elpais.com/internacional/2026-10-22/el-tribunal-penal-internacional-premio-sajarov-2026-del-parlamento-europeo.html",
+   "medios": [
+    "El País",
+    "RTVE.es",
+    "Clarín",
+    "Parlamento Europeo"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17965993194078327"
+  },
+  {
+   "slot": "2026-10-22#037",
+   "fecha": "2026-10-22T16:32:46.019556+00:00",
+   "seccion": "cultura",
+   "titular": "Denuncian la presunta censura de una obra sobre Lorca en Valladolid",
+   "noticia_id": "2e51aa2f3e630d63",
+   "url_fuente": "https://elpais.com/cultura/2026-10-22/ua-compania-teatral-denuncia-ante-la-justicia-de-castilla-y-leon-la-presunta-censura-de-su-obra-sobre-lorca-por-motivos-ideologicos.html",
+   "medios": [
+    "EL PAÍS"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17967196491197415"
+  },
+  {
+   "slot": "2026-10-22#038",
+   "fecha": "2026-10-22T17:15:17.196828+00:00",
+   "seccion": "deportes",
+   "titular": "El CSD lleva al TAD las palabras de Tebas sobre el Real Madrid",
+   "noticia_id": "8e995eed04daa869",
+   "url_fuente": "https://elpais.com/deportes/futbol/2026-10-22/el-csd-actua-de-oficio-y-eleva-al-tad-las-manifestaciones-de-javier-tebas-sobre-el-real-madrid.html",
+   "medios": [
+    "EL PAÍS",
+    "Teleprensa",
+    "MARCA"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18114300452182321"
+  },
+  {
+   "slot": "2026-10-22#039",
+   "fecha": "2026-10-22T17:36:49.489383+00:00",
+   "seccion": "gastronomia",
+   "titular": "Air France-KLM aumentará un 9% su capacidad desde España este invierno",
+   "noticia_id": "b90182362f97a37a",
+   "url_fuente": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNN1ZhNUhCNDZ6ZG1aTkdrMzNsVHVhMEM0d3o3aHVyMFdVRGlOQ2VRN20zaHpLZE1ZdjJoMy1aVnBMM2JRWmlBTGd0SVVTZ0Z2MVZrYmFpMGtwX2xtc1JpdWl0UmFLNDdHX3kxTDBSbTJ6SktielJfeFRla3NSZ1c5Z0xzdl9RdWlfSUZTSV92SzgxWVhkcUthaWhTV2c5MkcwYnV5elJyT21oV2RraEEtNkxzbGFYMmNUU1JvaWR3ZTdvSlQ0c3BpMEJOeEJuRGlYbElmVlFhU005SkItcUZpZdIB5gFBVV95cUxOUmRkbjluX1c2Z0RkMXd1Umo4R1djNVozaXdsWm9hVFdGX1FaSmRJVUlBRnlfYUlDaVB0cExMZ244WGFCNGFJZUNPemY4NEE4cHVtdEc1bmVOOTFVOGVlR2ZUWVdaTzMxMEUyQWtQeXlPek9xS0pKWEhpRWtCd25seTNrT3V6emctcjdodFFZc245Q3dBMm1TTDlSaEJudEV6VUVMZlIwdzdTMmM3Ul9sTmFIM2ZkNDllQWlfbEN0X0hVZGE0UG13cUFHbnFfQldvQ2dzQVBVMDlxQldzTzFONlhRQ1ktZw?oc=5",
+   "medios": [
+    "Demócrata",
+    "Forbes España",
+    "El Economista"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18098796299398858"
+  },
+  {
+   "slot": "2026-10-22#040",
+   "fecha": "2026-10-22T18:08:56.423109+00:00",
+   "seccion": "actualidad",
+   "titular": "PSOE y PP chocan por el debate a cuatro: RTVE o Atresmedia",
+   "noticia_id": "50ea0f63ed34a192",
+   "url_fuente": "https://www.elmundo.es/elecciones/elecciones-generales/2026/10/22/6ada2ea4e4d4d887418b45b8.html",
+   "medios": [
+    "El Mundo",
+    "El País",
+    "elDiario.es",
+    "20minutos",
+    "Portada"
+   ],
+   "formato": "reel",
+   "threads_id": "18057551858796594"
+  },
+  {
+   "slot": "2026-10-22#041",
+   "fecha": "2026-10-22T18:49:08.833285+00:00",
+   "seccion": "actualidad",
+   "titular": "Tensión en Zaragoza por el acto de Vito Quiles: la Policía carga",
+   "noticia_id": "f79eca0239849ce9",
+   "url_fuente": "https://www.eldiario.es/aragon/sociedad/policia-carga-antifascistas-durante-protesta-acto-vito-quiles-zaragoza_1_13608031.html",
+   "medios": [
+    "elDiario.es"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18017066957746871"
+  },
+  {
+   "slot": "2026-10-22#042",
+   "fecha": "2026-10-22T19:13:49.824898+00:00",
+   "seccion": "politica",
+   "titular": "El Gobierno atribuye a un grupo \"mínimo\" los disturbios contra Vox en A Coruña",
+   "noticia_id": "4bee1ec298d36683",
+   "url_fuente": "https://www.elmundo.es/galicia/2026/10/22/6ad9e6f9fc6c839c748b45b0.html",
+   "medios": [
+    "El Mundo",
+    "The Objective",
+    "Política"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18099833969377139"
+  },
+  {
+   "slot": "2026-10-22#043",
+   "fecha": "2026-10-22T19:49:32.492800+00:00",
+   "seccion": "economia",
+   "titular": "El Ibex pierde los 19.000 puntos arrastrado por la banca",
+   "noticia_id": "8f743fa35ff7c2b5",
+   "url_fuente": "https://www.expansion.com/mercados/cronica-bolsa/2026/10/22/6ad9a54ae5fdea1b788b457d.html",
+   "medios": [
+    "Expansión",
+    "Capital Radio",
+    "El Constitucional",
+    "Bolsamania"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18131767843748709"
+  },
+  {
+   "slot": "2026-10-22#044",
+   "fecha": "2026-10-22T20:02:07.158940+00:00",
+   "seccion": "finanzas",
+   "titular": "Mutua Madrileña pide que las empresas apunten solas a sus plantillas a un plan de pensiones",
+   "noticia_id": "53736be2bfb01c16",
+   "url_fuente": "https://www.expansion.com/ahorro/pensiones/2026/10/22/6ad9eb43468aebba0f8b45b1.html",
+   "medios": [
+    "Expansión",
+    "Europa Press"
+   ],
+   "formato": "reel",
+   "media_id": "18054915989592151",
+   "enlace": "https://www.instagram.com/reel/Dezy6NEEvvO/",
+   "threads_id": "18015095864991465"
+  },
+  {
+   "slot": "2026-10-22#045",
+   "fecha": "2026-10-22T20:36:59.350604+00:00",
+   "seccion": "vivienda",
+   "titular": "La vivienda ya es la mayor preocupación de los españoles: el 54%",
+   "noticia_id": "ebc83163a39b131f",
+   "url_fuente": "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/22/920173-la-preocupacion-por-la-vivienda-escala-12-puntos-en-un-ano-y-alcanza-en-2026-al-54",
+   "medios": [
+    "idealista/news"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17979220616915670"
+  },
+  {
+   "slot": "2026-10-22#046",
+   "fecha": "2026-10-22T21:04:04.732851+00:00",
+   "seccion": "actualidad",
+   "titular": "Sánchez admite en La Revuelta que los casos de corrupción de su partido fueron un error",
+   "noticia_id": "1a391d416135fa84",
+   "url_fuente": "https://www.elmundo.es/elecciones/elecciones-generales/2026/10/22/6ada764cfdddffef108b45a2.html",
+   "medios": [
+    "El Mundo",
+    "El País",
+    "Portada"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18116446289089545"
+  },
+  {
+   "slot": "2026-10-22#047",
+   "fecha": "2026-10-22T21:46:37.235722+00:00",
+   "seccion": "sociedad",
+   "titular": "Ya son 43 las mujeres asesinadas por violencia de género en 2026",
+   "noticia_id": "a45c185bba7cc25d",
+   "url_fuente": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNU8tV1kycVI4anp5R2R2Q1IxMXB4TlQ1NjdMbk1rdmVYam8xTWtFa0FNZTJrMFJGSTh3bmlYbjhNTHZ2T0JfTGpVZmQwckxnMGhPYlFqS3Z0ZU1nbFBMVkExR05sUVF2T3Q2b3g0aG83Y2RFRVp3a3BZSFY2RU1IQXdJcDFqTE5HWUNvV3d3RElhU29aOU8ycEJHbDA3aWQ3WDQwSXFlVEl0RVdIM0s0d1JxcUNXMWJZUkRkb2NqVDF6YTRxTjdGdFZtTGRSMEtHcWRVRUd6WFdETXFJYkE00gHfAUFVX3lxTFA1Ty1XWTJxUjhqenlHZHZDUjExcHhOVDU2N0xuTWt2ZVhqbzFNa0VrQU1lMmswUkZJOHduaVhuOE1MdnZPQl9MalVmZDByTGcwaE9iUWpLdnRlTWdsUExWQTFHTmxRUXZPdDZveDRobzdjZEVFWndrcFlIVjZFTUhBd0lwMWpMTkdZQ29Xd3dESWFTb1o5TzJwQkdsMDdpZDdYNDBJcWVUSXRFV0gzSzR3UnFxQ1cxYllSRGRvY2pUMXphNHFON0Z0Vm1MZFIwS0dxZFVFR3pYV0RNcUliQTQ?oc=5",
+   "medios": [
+    "Elplural.com",
+    "Canarias en Pleno"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18194323615402802"
+  },
+  {
+   "slot": "2026-10-23#000",
+   "fecha": "2026-10-22T22:15:11.929556+00:00",
+   "seccion": "tecnologia",
+   "titular": "Los agentes de IA entran en cuentas bancarias y los bancos de EEUU frenan",
+   "noticia_id": "642531c11c311cb9",
+   "url_fuente": "https://www.xataka.com/robotica-e-ia/agentes-ia-se-mueven-cuentas-bancarias-algunas-entidades-eeuu-se-preparan-para-peor",
+   "medios": [
+    "Xataka",
+    "Axios",
+    "The Information"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18642576925057642"
+  },
+  {
+   "slot": "2026-10-23#001",
+   "fecha": "2026-10-22T22:35:58.679243+00:00",
+   "seccion": "educacion",
+   "titular": "Unos 3.000 docentes protestan ante la Asamblea de Madrid y piden negociar",
+   "noticia_id": "079d656ce133b94c",
+   "url_fuente": "https://elpais.com/espana/madrid/2026-10-22/unos-3000-profesores-llevan-su-protesta-a-la-asamblea-de-madrid-para-reclamar-una-negociacion.html",
+   "medios": [
+    "EL PAÍS"
+   ],
+   "formato": "carrusel",
+   "threads_id": "17905937574605699"
+  },
+  {
+   "slot": "2026-10-23#002",
+   "fecha": "2026-10-22T23:07:47.744871+00:00",
+   "seccion": "ciencia",
+   "titular": "El calor causó unas 50.000 muertes en Europa este verano, según un estudio",
+   "noticia_id": "2096815d148f255c",
+   "url_fuente": "https://elpais.com/clima-y-medio-ambiente/2026-10-22/autopsia-del-verano-mas-mortifero-en-europa-50000-fallecidos-por-calor.html",
+   "medios": [
+    "EL PAÍS",
+    "El Salto"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18352802473268033"
+  },
+  {
+   "slot": "2026-10-23#003",
+   "fecha": "2026-10-22T23:39:19.855870+00:00",
+   "seccion": "internacional",
+   "titular": "Lula y Flávio Bolsonaro llegan empatados al domingo, según las encuestas",
+   "noticia_id": "20695395a9f14ff0",
+   "url_fuente": "https://www.lavanguardia.com/internacional/20261023/11665851/encuestas-confirman-empate-tecnico-lula-bolsonaro-tres-dias-elecciones.html",
+   "medios": [
+    "El País",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18066764090792564"
+  },
+  {
+   "slot": "2026-10-23#004",
+   "fecha": "2026-10-23T00:04:53.547439+00:00",
+   "seccion": "cultura",
+   "titular": "Muere Tom Skerritt, actor de 'Alien' y 'Top Gun', a los 93 años",
+   "noticia_id": "04ccceda2ddc6626",
+   "url_fuente": "https://www.elmundo.es/cultura/cine/2026/10/22/6ada727ffc6c83e76c8b4575.html",
+   "medios": [
+    "El Mundo",
+    "El País",
+    "ABC7"
+   ],
+   "formato": "carrusel",
+   "threads_id": "18117984145794876"
+  },
+  {
+   "slot": "2026-10-23#005",
+   "fecha": "2026-10-23T00:37:23.414205+00:00",
+   "seccion": "deportes",
+   "titular": "Messi llega a Oviedo para recoger el Premio Princesa de los Deportes",
+   "noticia_id": "a2be349c30274e0e",
+   "url_fuente": "https://elpais.com/videos/2026-10-22/messi-llega-a-oviedo-para-recibir-el-premio-princesa-de-asturias-de-los-deportes-2026.html",
+   "medios": [
+    "EL PAÍS"
+   ],
+   "formato": "carrusel",
+   "media_id": "18044153624831547",
+   "enlace": "https://www.instagram.com/p/De0ShUwkT6T/",
+   "threads_id": "17981712645066922"
+  },
+  {
+   "slot": "2026-10-23#006",
+   "fecha": "2026-10-23T01:23:56.859289+00:00",
+   "seccion": "gastronomia",
+   "titular": "Un horticultor palentino gana el Premio Nacional de Gastronomía al Talento Joven",
+   "noticia_id": "d411607772174556",
+   "url_fuente": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPcTBBMngxeDQ0ZVVsLUp4dEh2NlVMS2MwT0puVHRqSTc3LWtaeUFzUi1DdmJVOTE5b0RKd1ZRbnNHMTBnZVR1dG9DRXhqR2Jodll3VzkxUmpjX016NFQwOGpRZy1qOU9PRE5CLVl0dFB4QkJ1aE9zeTQzbnpOcWl1NG1Pc2VEU0pMaURianllUE9UMm5VMEpnUDMzS3FCMlBlQWxJcU9GR0xCekkwMFRUdE5PVThMR1VWZ2VYUVBYbDlWcko2RXoxLU5JWUI0WVk?oc=5",
+   "medios": [
+    "Tribuna de Palencia",
+    "Forbes España",
+    "Diario Palentino",
+    "Guada News"
+   ],
+   "formato": "carrusel",
+   "media_id": "18117714209325134",
+   "enlace": "https://www.instagram.com/p/De0X0A2nNap/",
+   "threads_id": "18096656666542507"
+  },
+  {
+   "slot": "2026-10-23#007",
+   "fecha": "2026-10-23T01:31:18.287744+00:00",
+   "seccion": "actualidad",
+   "titular": "Un terremoto de magnitud 7 en el Tíbet deja al menos 16 muertos",
+   "noticia_id": "8db6ab27009c54c5",
+   "url_fuente": "https://www.elmundo.es/internacional/2026/10/22/6ada74f5fdddffbf5e8b459b.html",
+   "medios": [
+    "El Mundo",
+    "El País"
+   ],
+   "formato": "carrusel",
+   "media_id": "18128503834760186",
+   "enlace": "https://www.instagram.com/p/De0Yrpxmm_O/",
+   "threads_id": "17999141027828829"
+  },
+  {
+   "slot": "2026-10-23#008",
+   "fecha": "2026-10-23T02:07:26.753946+00:00",
+   "seccion": "actualidad",
+   "titular": "La UCO detecta facturas que faltan en la contabilidad del PSOE, según El Mundo",
+   "noticia_id": "99bb24bd60357895",
+   "url_fuente": "https://www.elmundo.es/espana/2026/10/22/6ada535cfdddff545b8b45a9.html",
+   "medios": [
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "media_id": "18129058340487431",
+   "enlace": "https://www.instagram.com/p/De0c01WoFUo/",
+   "threads_id": "18637690204008090"
+  },
+  {
+   "slot": "2026-10-23#009",
+   "fecha": "2026-10-23T02:48:50.034372+00:00",
+   "seccion": "politica",
+   "titular": "Un juzgado de Madrid rechaza la querella de Vox contra Sofía Puente",
+   "noticia_id": "5c8ef3a929ac017a",
+   "url_fuente": "https://www.20minutos.es/nacional/un-juzgado-madrid-rechaza-una-querella-vox-contra-sofia-puente-por-ley-nietos_7052125_0.html",
+   "medios": [
+    "20minutos",
+    "El País",
+    "EFE"
+   ],
+   "formato": "carrusel",
+   "media_id": "18152189857550154",
+   "enlace": "https://www.instagram.com/p/De0hjYfGrMv/",
+   "threads_id": "18591090187070188"
+  },
+  {
+   "slot": "2026-10-23#010",
+   "fecha": "2026-10-23T03:30:01.389621+00:00",
+   "seccion": "economia",
+   "titular": "Bankinter gana 901 millones, pero se hunde un 7,56% en Bolsa",
+   "noticia_id": "a038d2be0b2f074b",
+   "url_fuente": "https://cincodias.elpais.com/companias/2026-10-22/bankinter-dispara-el-beneficio-un-11-en-los-nueve-primeros-meses-del-ano-hasta-los-900-millones.html",
+   "medios": [
+    "Cinco Días",
+    "El Boletín"
+   ],
+   "formato": "carrusel",
+   "media_id": "17936991561389374",
+   "enlace": "https://www.instagram.com/p/De0mPidlDfL/",
+   "threads_id": "18119792725750824"
+  },
+  {
+   "slot": "2026-10-23#011",
+   "fecha": "2026-10-23T03:38:32.912410+00:00",
+   "seccion": "finanzas",
+   "titular": "Bancos y empresas pagan más por financiarse por la crisis de la deuda francesa",
+   "noticia_id": "17627dc9d9b19a92",
+   "url_fuente": "https://www.expansion.com/empresas/banca/2026/10/23/6ad2161be5fdea54478b458e.html",
+   "medios": [
+    "Expansión"
+   ],
+   "formato": "carrusel",
+   "media_id": "18059342306559431",
+   "enlace": "https://www.instagram.com/p/De0nP72G5F8/",
+   "threads_id": "18106268657577902"
+  },
+  {
+   "slot": "2026-10-23#012",
+   "fecha": "2026-10-23T04:08:05.004963+00:00",
+   "seccion": "vivienda",
+   "titular": "Vivienda: el Gobierno quita 'fondo buitre' de los decretos y suma a grandes tenedores",
+   "noticia_id": "1ec1c3c874f5beae",
+   "url_fuente": "https://www.idealista.com/news/inmobiliario/vivienda/2026/10/23/918288-que-es-un-fondo-buitre-indefinicion-juridica-que-traera-conflictos-legales",
+   "medios": [
+    "idealista/news"
+   ],
+   "formato": "carrusel",
+   "media_id": "18042714431829940",
+   "enlace": "https://www.instagram.com/p/De0qo7njiMc/",
+   "threads_id": "18024502901871623"
+  },
+  {
+   "slot": "2026-10-23#013",
+   "fecha": "2026-10-23T04:48:22.620082+00:00",
+   "seccion": "empleo",
+   "titular": "La hostelería de Albacete tendrá convenio colectivo hasta 2028",
+   "noticia_id": "ec4ac41206ef1e67",
+   "url_fuente": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOeDZpelBrb3QyaXJUc1ZSbHFEQzlxMk03aVBkUV9XR0wwT1NBbTZPVWdwN2VISUVCZFZSdjRHNGYtZlJKTWR6eVVUVC1sYVRpTURISk4wTXhtTDNGam5qdDhieURNT2pGbUtsOEJKbk1ycVg2RGJBOVZ5d0tlXzNJdHRiZ3dfODhxY1ZRdmM2dDJnSFRya3BRWmJHVnZGWXhtUHo4Q2NvZFZOOFVMTVJhSmhIVXFfT1lIOTFsNVZ6d0RVaUx3aVh2LVpuZVB2WEpBN19lajZKeEFjQ2ZZVzJXM0VLbm5rY2Y5aWtWQzZDNE1iTXA5RHhmOVYwd1NBNlp0T2d6MDNLU1FzNmZJOWE00gGPAkFVX3lxTE54Nml6UGtvdDJpclRzVlJscURDOXEyTTdpUGRRX1dHTDBPU0FtNk9VZ3A3ZUhJRUJkVlJ2NEc0Zi1mUkpNZHp5VVRULWxhVGlNREhKTjBNeG1MM0Zqbmp0OGJ5RE1PakZtS2w4QkpuTXJxWDZEYkE5Vnl3S2VfM0l0dGJnd184OHFjVlF2YzZ0MmdIVHJrcFFaYkdWdkZZeG1QejhDY29kVk44VUxNUmFKaEhVcV9PWUg5MWw1Vnp3RFVpTHdpWHYtWm5lUHZYSkE3X2VqNkp4QWNDZllXMlczRUtubmtjZjlpa1ZDNkM0TWJNcDlEeGY5VjB3U0E2WnRPZ3owM0tTUXM2Zkk5YTQ?oc=5",
+   "medios": [
+    "Cadena SER",
+    "UGT Castilla-La Mancha"
+   ],
+   "formato": "carrusel",
+   "media_id": "17934044700406754",
+   "enlace": "https://www.instagram.com/p/De0vOOaHHXM/",
+   "threads_id": "18098635649212224"
+  },
+  {
+   "slot": "2026-10-23#014",
+   "fecha": "2026-10-23T05:28:16.096544+00:00",
+   "seccion": "sociedad",
+   "titular": "La borrasca Austen llega a España con viento fuerte, lluvia y oleaje",
+   "noticia_id": "9451f816645dcd76",
+   "url_fuente": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQSklORkZ5TU9HYmlYVWtFbFRFUk8wdWdMc0VoSm1KWUhwOXVzalpoRkZwR2FBeXNEUm5udjUtQkdnenY5aWhURW1sZHVpYXBGcmJZUjZ3OE9ha0JTOWNuQ0pFSGRJSTU3dWFwOGhweU9FMU5meVhfQlZGMzNFREJDRzFfUUh6dks0RTNCbTBhWkwxMUtvTmZBQVVXeFlPeTk4azZsOEN2TC10NENoNmtoX2V2Y1VXdmJ4aXM1R3l4d2RRS2pxSXY5YnNuNmJ2Tmlp0gHWAUFVX3lxTFBHYXY2UVpSMmU2d284WGdtcVRBRjNkTXNMNzNEYVNvNzluajJzbkRDRWp3eWdjelMxbzBOTm5sRVJzQjlTRnhmQ3d2eG1NRnhEcHlBakVsZEhaS3VSQ2hCaHJMNGNmLUhrRjE1TW91a0o0RU9mWDNxaGtKak4wS3VpUmQzd1gtNXh5WUFQdHdmQm1hSUZybmdfcDl6Mi1JN0R2YUdCOVRsMzAyLU9TNWRabS1KVERHY1piYmRqTW01cHVicHpoa0RCakVrSVN3LUVnN2tFMnc?oc=5",
+   "medios": [
+    "Vozpopuli",
+    "ABC",
+    "20Minutos"
+   ],
+   "formato": "carrusel",
+   "media_id": "18076420553733943",
+   "enlace": "https://www.instagram.com/p/De0zy9glT7l/",
+   "threads_id": "18107754779260660"
+  },
+  {
+   "slot": "2026-10-23#015",
+   "fecha": "2026-10-23T05:37:53.302651+00:00",
+   "seccion": "actualidad",
+   "titular": "Este domingo se atrasan los relojes: a las 3 serán las 2",
+   "noticia_id": "b0a33f77b7f4974c",
+   "url_fuente": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNa2xXdHJIRmRuaG9kdVNjd3M4dXQyS3pWZURTMWNnTWVrX1pvWC1ub2c5cTI1VjA0T2xfd05hSDVrWXM2NHVwYlNKVm14dGFyR2FmVm5SSm5YOWk0eElRT1NDX0NCUEFoaHBmUTBfcFZKWnVyWjJpOHdaUUo0ZFZNNTI0UF9nM0tacFlOOVFETy0yVVh0NEhGaklMNS1FNHpxU0dZ0gGoAUFVX3lxTE1FOV96dVg3V1JsRW5seGxvQ0tOMUJXeFE5WVNxY0dMRTdPRFpMWE9OeGNmNXpKcGdaSnZKbkw4TG5qNm54c2VqREFZMFJTRUV0Q2k3QWJYV2stcGR2TnBnOF9sOS0xbzVQV0Z6cFFQczdRWVQ0OTYzck5uZ3ZJSVRlUWNzVGhQNENLYTRtOWdseGI0N1ZVWG5YX2VhUWFhXzFPMV95T3ctYg?oc=5",
+   "medios": [
+    "elDiario.es",
+    "El Economista",
+    "El Digital de Cuenca",
+    "Portada"
+   ],
+   "formato": "carrusel",
+   "media_id": "17955352539036254",
+   "enlace": "https://www.instagram.com/p/De005objicu/",
+   "threads_id": "18029083430859960"
+  },
+  {
+   "slot": "2026-10-23#016",
+   "fecha": "2026-10-23T06:03:36.302036+00:00",
+   "seccion": "tecnologia",
+   "titular": "Anthropic: los perfiles junior pasan del 27% al 9% de sus fichajes técnicos",
+   "noticia_id": "8d67eb70e1ac37ec",
+   "url_fuente": "https://www.xataka.com/robotica-e-ia/anthropic-muestra-efecto-ia-empleo-junior-27-al-9-nuevas-contrataciones",
+   "medios": [
+    "Xataka"
+   ],
+   "formato": "reel",
+   "media_id": "18213058966315311",
+   "enlace": "https://www.instagram.com/reel/De03v3NExJs/",
+   "threads_id": "18002510673012569"
+  },
+  {
+   "slot": "2026-10-23#018",
+   "fecha": "2026-10-23T07:00:57.734605+00:00",
+   "seccion": "ciencia",
+   "titular": "Las danas extremas se vuelven más peligrosas con un Mediterráneo más cálido",
+   "noticia_id": "52faf7bc833c3c5b",
+   "url_fuente": "https://elpais.com/clima-y-medio-ambiente/2026-10-23/la-era-de-las-danas-extremas-una-atmosfera-dopada-las-esta-haciendo-mas-peligrosas.html",
+   "medios": [
+    "EL PAÍS",
+    "Infobae"
+   ],
+   "formato": "carrusel",
+   "media_id": "17995621988844110",
+   "enlace": "https://www.instagram.com/p/De0-ZTMlZSy/",
+   "threads_id": "18023434841931330"
+  },
+  {
+   "slot": "2026-10-23#019",
+   "fecha": "2026-10-23T07:44:15.825876+00:00",
+   "seccion": "internacional",
+   "titular": "Una juez frena las operaciones migratorias de Trump cerca de las elecciones",
+   "noticia_id": "435447040ea5cd1a",
+   "url_fuente": "https://www.elmundo.es/internacional/2026/10/23/6adb00adfc6c83a13d8b4584.html",
+   "medios": [
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "media_id": "17962431807011119",
+   "enlace": "https://www.instagram.com/p/De1DYDREU4a/",
+   "threads_id": "18635472862001915"
+  },
+  {
+   "slot": "2026-10-23#020",
+   "fecha": "2026-10-23T08:02:04.268030+00:00",
+   "seccion": "cultura",
+   "titular": "Camilo anuncia 13 conciertos en España en 2027 con su nueva gira",
+   "noticia_id": "5b7062d161b96289",
+   "url_fuente": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMDZrNFFHalBHekZaZlpJcFFSMkRMMTdtVTJOM2R4Skp3NThCTnJHakowenV0UjZxeXJMRjFHek1FQnZuTGlEMERTWXJfcmN6eDhvRVBUOTNzdFY2YWo5Vi1aTDdFNnp2b2NuYXp6S3VvdzF2ckg5RXVDSDNXU2tiVlBKbFhGbFBFbGdqZ3RfSHR0LWVtdHQ1RnBsdU1vQjA2MDg5TEZxMkFiQU16anNQMkFnb2l0SkJJX3o2Mjd30gHSAUFVX3lxTE1BWldENmVqd2JuRS1qRl9YT0ZkNThHR2NmaVlNc2ZlN0tGWFM0RUJTbjlVSGdyZElDaEZWTC1BWEpQZ05SblQ4bzJIeDNXZ18xREVGTWtVbnVkOVd6R29LU2dVTDV5OFo4cjVJdHJPelF3eko4WURBdlkzZFk5NUk4TE5zbmJKVHRWa3JBWk9OS0Q4SndnOG5WM2k1S0ZXYnYweXhONkp2M2JXZTJ2Z0E1T1FMTWd3T3p3ZnVESzFsNkNGZ3FybUNJSUZXcW1OS1MxQQ?oc=5",
+   "medios": [
+    "Diario AS",
+    "El Universo",
+    "OkDiario",
+    "Elplural.com"
+   ],
+   "formato": "carrusel",
+   "media_id": "18068026469769901",
+   "enlace": "https://www.instagram.com/p/De1FYPaFboA/",
+   "threads_id": "17907532464663709"
+  },
+  {
+   "slot": "2026-10-23#021",
+   "fecha": "2026-10-23T08:41:04.541775+00:00",
+   "seccion": "deportes",
+   "titular": "La huelga de trabajadores del Barça sigue y amenaza al clásico",
+   "noticia_id": "8f69df9bfba4766b",
+   "url_fuente": "https://www.lavanguardia.com/deportes/fc-barcelona/20261022/11665773/huelga-trabajadores-barcelona-sigue-amenaza-clasico.html",
+   "medios": [
+    "Material de prensa proporcionado"
+   ],
+   "formato": "carrusel",
+   "media_id": "17973682551169491",
+   "enlace": "https://www.instagram.com/p/De1J7Bbm0Py/",
+   "threads_id": "18074340023767500"
+  },
+  {
+   "slot": "2026-10-23#022",
+   "fecha": "2026-10-23T09:06:34.308859+00:00",
+   "seccion": "actualidad",
+   "titular": "Feijóo promete reabrir el debate del aborto y suprimir Igualdad",
+   "noticia_id": "e6ef9014dfb7d5e3",
+   "url_fuente": "https://www.eldiario.es/politica/feijoo-reabre-debate-aborto-eliminara-ministerio-igualdad-estudiara-viabilidad-pensiones_1_13608554.html",
+   "medios": [
+    "elDiario.es",
+    "EL PAÍS"
+   ],
+   "formato": "reel",
+   "entradilla": "El candidato del PP también plantea reformar la eutanasia y no descarta gobernar con Vox, en una entrevista a una semana de campaña.",
+   "hora": "11:05",
+   "media_id": "17977056666176220",
+   "enlace": "https://www.instagram.com/reel/De1MsSTDfAN/",
+   "threads_id": "17904702756667382"
+  },
+  {
+   "slot": "2026-10-23#023",
+   "fecha": "2026-10-23T09:50:35.336462+00:00",
+   "seccion": "actualidad",
+   "titular": "La Ertzaintza carga en Vitoria durante la protesta contra un desahucio",
+   "noticia_id": "2a134c542639d8ad",
+   "url_fuente": "https://www.20minutos.es/pais-vasco/alava/cargas-policiales-vitoria-protesta-contra-un-desahucio-una-familia-con-seis-hijos-menores-cargo_7052475_0.html",
+   "medios": [
+    "20minutos",
+    "elDiario.es",
+    "El Mundo",
+    "El Correo",
+    "TVE"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Según los medios, hay al menos dos detenidos. La familia afectada tiene seis hijos menores y el lanzamiento estaba previsto a las 10:30.",
+   "hora": "11:49",
+   "media_id": "18096439532403241",
+   "enlace": "https://www.instagram.com/p/De1R0efm-st/",
+   "threads_id": "18394299367164830"
+  },
+  {
+   "slot": "2026-10-23#024",
+   "fecha": "2026-10-23T10:29:49.798654+00:00",
+   "seccion": "actualidad",
+   "titular": "Leire Díez se querella contra el PP por el vídeo con IA que la suplanta",
+   "noticia_id": "33322b4ec62ffd5e",
+   "url_fuente": "https://elpais.com/espana/2026-10-23/leire-diez-se-querella-contra-el-pp-por-el-video-generado-con-ia-para-atacar-al-psoe.html",
+   "medios": [
+    "El País",
+    "El Mundo",
+    "elDiario.es"
+   ],
+   "formato": "carrusel",
+   "entradilla": "La exmilitante socialista pide a la Audiencia Nacional que retire el vídeo y atribuye al PP tres delitos. El PP no ha respondido a la querella.",
+   "hora": "12:29",
+   "media_id": "18115255991276139",
+   "enlace": "https://www.instagram.com/p/De1WSghEfVc/",
+   "threads_id": "18221856547351965"
+  },
+  {
+   "slot": "2026-10-23#025",
+   "fecha": "2026-10-23T10:37:17.207649+00:00",
+   "seccion": "politica",
+   "titular": "Urtasun anuncia un requerimiento a Castilla y León por condicionar las ayudas al cine",
+   "noticia_id": "8acc2103b461981a",
+   "url_fuente": "https://www.lavanguardia.com/politica/20261023/11666321/urtasun-abre-llevar-tribunales-castilla-leon-condicionar-ayudas-cine.html",
+   "medios": [
+    "20minutos.es",
+    "Europa Press"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El ministro de Cultura dice que es el paso previo a la vía contencioso-administrativa y no descarta acudir al Tribunal Constitucional.",
+   "hora": "12:36",
+   "media_id": "18111202841187694",
+   "enlace": "https://www.instagram.com/p/De1XJksm1hq/",
+   "threads_id": "18132512387509655"
+  },
+  {
+   "slot": "2026-10-23#026",
+   "fecha": "2026-10-23T11:04:20.694347+00:00",
+   "seccion": "economia",
+   "titular": "Volvo Cars se hunde hasta un 30% en bolsa y recortará 2.500 empleos",
+   "noticia_id": "70df02c9a62e467a",
+   "url_fuente": "https://www.elmundo.es/economia/dinero-inversion/2026/10/23/6adb3a9ae9cf4a583f8b4596.html",
+   "medios": [
+    "El Mundo",
+    "Expansión"
+   ],
+   "formato": "carrusel",
+   "entradilla": "La automovilística sueca registra pérdidas operativas en el tercer trimestre y sus ingresos en China caen casi un 50%.",
+   "hora": "13:03",
+   "media_id": "18109968179619440",
+   "enlace": "https://www.instagram.com/p/De1aQWgFVki/",
+   "threads_id": "18166929301471197"
+  },
+  {
+   "slot": "2026-10-23#027",
+   "fecha": "2026-10-23T11:49:01.526490+00:00",
+   "seccion": "finanzas",
+   "titular": "El Euríbor sube al 3,267% y cierra la semana al alza",
+   "noticia_id": "1b8fccfa5a7829fa",
+   "url_fuente": "https://www.expansion.com/mercados/euribor/2026/10/23/6adb302a468aeb62668b45a9.html",
+   "medios": [
+    "Expansión"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El índice diario sube cinco milésimas respecto a ayer, mientras la media de octubre se sitúa en el 3,227%.",
+   "hora": "13:48",
+   "media_id": "18121585541014916",
+   "enlace": "https://www.instagram.com/p/De1fYQ-kd-p/",
+   "threads_id": "18110535971627241"
+  },
+  {
+   "slot": "2026-10-23#029",
+   "fecha": "2026-10-23T12:31:52.168020+00:00",
+   "seccion": "empleo",
+   "titular": "Feijóo quiere subir el salario mínimo y también el salario medio",
+   "noticia_id": "5b9167cd9b907a00",
+   "url_fuente": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQM0RfUF9qUTBkWk9XWTBXaWVZbnpXT3hJdUZveUZkbzVlOWRFd2ZpOTAyWVJuMUJMQ3p6NlVZWThiek1leHBfMDJEM3BJQ1VSaVVEdTJBNEduWDF6OW5OUGpINnJHTXo3Vk9lVGJNdkhramJVTVpGcFBKNThzSWF6Z1N4d1ZiaGh6ajEzRGNvaU9JSG5weEhLYVZvLWZHaWNpaEYzbG5xWTNCZkg4LTlRbFR1elJqZzVWU0gxTTJ4RXl3N1M0WDBRWtIB4wFBVV95cUxOREJBdGEwaTlJMDNJYkMyZFFOYmxKNGlXVDZzaUh4eE1XOFJIdXFUTEhhd3FMeDhTOHJPc2RPQjFMNDNhYldWNlhDc2VBSzRFNDdQSWJtMXlHQ0tDMm15c3FjX2hXenZfSkVmaUNESXFrQ0l0Y3Z5YjBReFliaUp1dGpSVmQzX1VBQ1lxdTRnSFBCSllxWllqLVYxWWR4VnJ2RldWRzQzNFNubHhSVXhYVUdGMy11N3dLakFmZUZDUFZRS3VNb2VxVmMtRHprWE1oUzA4TkZDUVJCNkdJeVRIb2hoMA?oc=5",
+   "medios": [
+    "Infobae",
+    "El HuffPost",
+    "Partido Popular",
+    "Demócrata",
+    "Servimedia"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El líder del PP dice que su objetivo es que suban ambos y que pactará el SMI con patronal y sindicatos.",
+   "hora": "14:31",
+   "media_id": "18032190608906090",
+   "enlace": "https://www.instagram.com/p/De1kQICFK9f/",
+   "threads_id": "18092627852698170"
+  },
+  {
+   "slot": "2026-10-23#030",
+   "fecha": "2026-10-23T13:17:59.512332+00:00",
+   "seccion": "sociedad",
+   "titular": "Entra en vigor la reforma de la ley de dependencia y discapacidad",
+   "noticia_id": "07213ab0c4fa6db0",
+   "url_fuente": "https://www.lavanguardia.com/vida/20260916/11636593/nueva-ley-dependencia-discapacidad-ayudas-derechos.html",
+   "medios": [
+    "Observatorio Estatal de la Dependencia"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El plazo para reconocer la dependencia baja de seis a tres meses y se amplían los derechos de las personas con discapacidad.",
+   "hora": "15:17",
+   "media_id": "18097505717439370",
+   "enlace": "https://www.instagram.com/p/De1pjepFm_6/",
+   "threads_id": "18135229978726526"
+  },
+  {
+   "slot": "2026-10-23#032",
+   "fecha": "2026-10-23T14:12:09.180613+00:00",
+   "seccion": "tecnologia",
+   "titular": "Una cadena retira las gafas Ray-Ban de Meta de más de 400 tiendas",
+   "noticia_id": "88f1b29ae139da12",
+   "url_fuente": "https://www.genbeta.com/actualidad/compania-gafas-neerlandesa-primer-minorista-retirar-gafas-inteligentes-ray-ban-meta-400-tiendas-debido-a-preguntas-que-se-han-planteado-tecnologia",
+   "medios": [
+    "Genbeta",
+    "Xataka"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Hans Anders suspende su venta en Países Bajos y Bélgica por las dudas sobre cómo pueden usarse para grabar a otras personas.",
+   "hora": "16:11",
+   "media_id": "18133095988682504",
+   "enlace": "https://www.instagram.com/p/De1vwguFsMK/",
+   "threads_id": "17953967271267225"
+  },
+  {
+   "slot": "2026-10-23#033",
+   "fecha": "2026-10-23T14:53:30.529684+00:00",
+   "seccion": "educacion",
+   "titular": "Las universidades piden fondos para aplicar el nuevo Estatuto del Estudiante",
+   "noticia_id": "03cd3c2865872c55",
+   "url_fuente": "https://www.magisnet.com/2026/10/las-universidades-piden-recursos-para-hacer-realidad-el-estatuto-del-estudiante/",
+   "medios": [
+    "Magisnet"
+   ],
+   "formato": "carrusel",
+   "entradilla": "La CRUE avisa de que hacen falta recursos para que los nuevos derechos sean efectivos. El texto entró en vigor este jueves.",
+   "hora": "16:53",
+   "media_id": "18105958349567742",
+   "enlace": "https://www.instagram.com/p/De10dVkFX7w/",
+   "threads_id": "18097221941121105"
+  },
+  {
+   "slot": "2026-10-23#034",
+   "fecha": "2026-10-23T15:01:58.577274+00:00",
+   "seccion": "actualidad",
+   "titular": "Anticorrupción pide investigar a Zapatero por malversación por las joyas",
+   "noticia_id": "e755bffae2f9da79",
+   "url_fuente": "https://www.elmundo.es/espana/2026/10/23/6adb4a8c21efa06e428b45aa.html",
+   "medios": [
+    "El Mundo",
+    "elDiario.es",
+    "El País"
+   ],
+   "formato": "reel",
+   "entradilla": "El juez pide a Patrimonio del Estado el acta de los regalos recibidos por Presidencia del Gobierno entre 2004 y 2011.",
+   "hora": "17:00",
+   "media_id": "18078536141432189",
+   "enlace": "https://www.instagram.com/reel/De11VzPjzid/",
+   "threads_id": "18103820693018049"
+  },
+  {
+   "slot": "2026-10-23#035",
+   "fecha": "2026-10-23T15:31:58.478895+00:00",
+   "seccion": "internacional",
+   "titular": "Netanyahu anuncia una ofensiva en Cisjordania tras un ataque cerca de Hebrón",
+   "noticia_id": "553ef501d3e6d8b7",
+   "url_fuente": "https://elpais.com/internacional/2026-10-23/el-ejercito-israeli-mata-a-dos-palestinos-armados-tras-un-tiroteo-en-cisjordania.html",
+   "medios": [
+    "El País",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Dos soldados murieron en el ataque, según la prensa, y las elecciones en Israel son el 27 de octubre.",
+   "hora": "17:31",
+   "media_id": "18096720413657014",
+   "enlace": "https://www.instagram.com/p/De145SPnJ-i/",
+   "threads_id": "18120958618985735"
+  },
+  {
+   "slot": "2026-10-23#036",
+   "fecha": "2026-10-23T16:12:57.205458+00:00",
+   "seccion": "cultura",
+   "titular": "Muere a los 74 años el escritor japonés Ryu Murakami",
+   "noticia_id": "49be14a7ea30299e",
+   "url_fuente": "https://elpais.com/cultura/2026-10-23/muere-a-los-74-anos-el-escritor-ryu-murakami-autor-de-azul-casi-transparente-y-sopa-de-miso.html",
+   "medios": [
+    "El País",
+    "Cultura"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Autor de 'Azul casi transparente', retrató la cara más oscura de la sociedad japonesa, según anunció su editorial Gentosha.",
+   "hora": "18:12",
+   "media_id": "18114819605029905",
+   "enlace": "https://www.instagram.com/p/De19ko1lmsW/",
+   "threads_id": "18113002220594998"
+  },
+  {
+   "slot": "2026-10-23#037",
+   "fecha": "2026-10-23T16:51:42.906269+00:00",
+   "seccion": "deportes",
+   "titular": "Peter Lim vende el 42% del Valencia CF al consorcio Pitchwise",
+   "noticia_id": "5cc0b9ef8e33aa35",
+   "url_fuente": "https://www.lavanguardia.com/local/valencia/20261023/11666607/lim-vende-42-valencia-club-futbol-100-millones-consorcio-pitchwise.html",
+   "medios": [
+    "Las Provincias",
+    "EL PAÍS"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El grupo inversor aportará 100 millones de euros de nuevo capital y valora el club en 1.250 millones, según el comunicado del Valencia.",
+   "hora": "18:51",
+   "media_id": "18100293341545373",
+   "enlace": "https://www.instagram.com/p/De2CBAblnXV/",
+   "threads_id": "18340527658261499"
+  },
+  {
+   "slot": "2026-10-23#038",
+   "fecha": "2026-10-23T17:05:03.764841+00:00",
+   "seccion": "actualidad",
+   "titular": "Interior detecta un llamamiento yihadista a atacar a policías y manifestantes",
+   "noticia_id": "5968bc938de1a641",
+   "url_fuente": "https://elpais.com/espana/2026-10-23/interior-detecta-un-llamamiento-yihadista-para-atacar-a-policias-y-manifestantes-durante-las-protestas.html",
+   "medios": [
+    "El País",
+    "Última Hora",
+    "El Mundo",
+    "20minutos",
+    "La Razón"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Una web afín a Dáesh incita a atentar en España y otros países europeos aprovechando las protestas, según informan varios medios.",
+   "hora": "19:04",
+   "media_id": "17924971818435662",
+   "enlace": "https://www.instagram.com/p/De2Di7kll3N/",
+   "threads_id": "18098513855430217"
+  },
+  {
+   "slot": "2026-10-23#039",
+   "fecha": "2026-10-23T17:36:52.489061+00:00",
+   "seccion": "consumo",
+   "titular": "Facua convoca una \"huelga de compras\" el 11 de noviembre",
+   "noticia_id": "ba4ee0e2376496c0",
+   "url_fuente": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVTdObDZXZ3JvZnJGb20tRUdob0F3TG1QNElkUC04cG5RUmFoRkwxNnBfMWlCYlNpR2J4SnpqVUJWOXlmd2NWdHphRXJtWGpDMmIyWnlUbEtMZ1MzVGdKSFl1ZWVhNU9aVklkN29DejdCN1FUa01IanJIcFZ0SjFOZHlJNVdCMWQ2YzFIbWZ4T2k0dGlidk9xYnZoVndTdGgzSnlOb01pcGxUekhNOWtnM1YtR2hBVFJsbXVmMy1YeFM2Y1hOM05UU1ZrSmdaYjVmYlFfVU42dVFtdFI1d3RMMk5Cb1nSAeoBQVVfeXFMTXVXLWFPd3RSUTVJT1RJLUV2bklub2JEeDZhaEJKbHdHcU5UQmM0VGF6X3VQcVVIdmZ0SFh3RWVvZk81dTFXZ0ctanZCY1d3RkhrUEptU3N3RGRwZ0ZJVTh5cGdCSDlkc1VubDg2LTFNcWl2LUtRcjNha0RlcGVsN08xbGtQVUNlc2ptUk1pSmEzQkdMX0dHdzZDZGI3Nm8xQXVhWkI4d0F3WjkwS2lpTDBaR2kyVWhLUU9fZG1FZzdseFdFV0xVWXNwVkgySmY1S1Nrbnk2bTlkbEZKT0RrMHFlR2ZzOWdZa0pB?oc=5",
+   "medios": [
+    "Diario en Positivo",
+    "Deia",
+    "Demócrata",
+    "Europa Press",
+    "Zamora News"
+   ],
+   "formato": "carrusel",
+   "entradilla": "La organización pide a los consumidores que dejen de comprar ese día como protesta por la subida de los precios.",
+   "hora": "19:36",
+   "media_id": "18120350191972001",
+   "enlace": "https://www.instagram.com/p/De2HLN2mA1p/",
+   "threads_id": "17896760973416000"
+  },
+  {
+   "slot": "2026-10-23#040",
+   "fecha": "2026-10-23T18:00:58.348547+00:00",
+   "seccion": "actualidad",
+   "titular": "El Supremo da cinco días a Bolaños y Albares para entregar la lista de afectados",
+   "noticia_id": "ca3e04968b21fab8",
+   "url_fuente": "https://www.elmundo.es/elecciones/elecciones-generales/2026/10/23/6adb37b3e9cf4a651e8b4587.html",
+   "medios": [
+    "El Mundo",
+    "El País",
+    "elDiario.es",
+    "ABC"
+   ],
+   "formato": "reel",
+   "entradilla": "El tribunal reclama los nombres de las 163.020 personas con el voto suspendido y advierte de multas y posible responsabilidad penal.",
+   "hora": "20:00",
+   "media_id": "18098479214213118",
+   "enlace": "https://www.instagram.com/reel/De2J8cvCQGZ/",
+   "threads_id": "18458058172125934"
+  },
+  {
+   "slot": "2026-10-23#041",
+   "fecha": "2026-10-23T18:36:52.884203+00:00",
+   "seccion": "politica",
+   "titular": "La Fiscalía atribuye a Irán el atentado contra Vidal-Quadras",
+   "noticia_id": "7e765bd481824789",
+   "url_fuente": "https://www.lavanguardia.com/politica/20261023/11666560/fiscalia-concluye-detras-intento-asesinato-vidal-quadras-encuentra-iran.html",
+   "medios": [
+    "La Vanguardia",
+    "El País",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El fiscal pide hasta 27 años de cárcel para el presunto autor del disparo y penas para otros seis acusados.",
+   "hora": "20:36",
+   "media_id": "18133704412741003",
+   "enlace": "https://www.instagram.com/p/De2OCHpFLVM/",
+   "threads_id": "18028335077875930"
+  },
+  {
+   "slot": "2026-10-23#042",
+   "fecha": "2026-10-23T19:20:25.477284+00:00",
+   "seccion": "economia",
+   "titular": "T-Systems, favorita para gestionar la nube pública de Cataluña",
+   "noticia_id": "25902eaafa290ad0",
+   "url_fuente": "https://cincodias.elpais.com/companias/2026-10-23/deutsche-telekom-arrebata-a-telefonica-el-megacontrato-de-400-millones-para-la-nube-soberana-de-cataluna.html",
+   "medios": [
+    "Cinco Días",
+    "Expansión",
+    "Economía"
+   ],
+   "formato": "carrusel",
+   "entradilla": "La filial de Deutsche Telekom se impone a Telefónica y NTT Data en un contrato de unos 400 millones a ocho años, aún sin adjudicar.",
+   "hora": "21:20",
+   "media_id": "18359313820223999",
+   "enlace": "https://www.instagram.com/p/De2TCu2j42j/",
+   "threads_id": "18120754699989960"
+  },
+  {
+   "slot": "2026-10-23#043",
+   "fecha": "2026-10-23T19:57:24.519483+00:00",
+   "seccion": "actualidad",
+   "titular": "Un muerto y varios heridos en un atentado racista cerca de París",
+   "noticia_id": "85108c33da8b1516",
+   "url_fuente": "https://elpais.com/internacional/2026-10-23/un-muerto-y-varios-heridos-en-tiroteos-en-una-localidad-de-las-afueras-de-paris.html",
+   "medios": [
+    "EL PAÍS",
+    "elDiario.es",
+    "20minutos",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Un hombre disparó desde un coche en Trappes y La Verrière. Macron habla de \"terrorismo racista\". El presunto autor está detenido.",
+   "hora": "21:56",
+   "media_id": "17929123461184104",
+   "enlace": "https://www.instagram.com/p/De2XRRpD3II/",
+   "threads_id": "18054145298807173"
+  },
+  {
+   "slot": "2026-10-23#044",
+   "fecha": "2026-10-23T20:02:49.623092+00:00",
+   "seccion": "vivienda",
+   "titular": "La vivienda sube 3,6 veces más que los salarios desde 2013, según CCOO",
+   "noticia_id": "621d13e23b02c4c9",
+   "url_fuente": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZVo1cVcxc0wwMVNhODVFbmNNY3NSNE1RWDdKcFpaVWZoRHhYUmIyNGdjMGVNUGhmQVAzZEMtdmFOa082Z2RaeXhKTVgzdWY2LUpYQWJXLUZFV3Bfa3l1Q0ZaekpoMURTZ2xtejVhWGtkc2UzdzVXQjhJWHBqV3FpamRRc0I1OFdqS2NMdkVVdWdDVl83a0hndWp0OUl3MEs3WjJhX2dELU1LdE54SXRkb2tDRUxFQ09pWVFNRDh3VDd5VDk3YXE0RldQTWxRa2llMkVrUkQwcWtrVVZnYUs1dVo1WklkQUXSAfsBQVVfeXFMT0dLRTNLY1M2RnpOVDNrVEFLaVV6bGxGdGlueFNjeHB1ZmdGTmZLdmpFZEpmUVhVOUN1R0VxdlhCZzJqZ2tuVk1CZl9SWV80Z0RoOFZsN2VZUTA0Vjg2TzJyUWdVUUZ1Mlh4bWZKSFRST25ON0JvRUF4NmkxOGVDRWZjMkw0VjBDNncwRERXbVhPSmxfT2ZVZDQ4bTI5T2oycVRFcDB4SUM3QTNPTnNlMC1oMVRSem50YkdxODJqU0hlLWIybTJqRVdlc2hieTdtWW9tb2ZiUXFFckFoaFNHR2paY0dmajJLWjZKZjg3Yl91SjJQUi01S3lJRFE?oc=5",
+   "medios": [
+    "Cadena SER",
+    "elDiario.es",
+    "Artículo 14",
+    "Notimérica",
+    "Uruguay Al Día"
+   ],
+   "formato": "reel",
+   "entradilla": "El sindicato advierte de que el precio de la vivienda se ha disparado un 108% frente al 30% de las nóminas, según Artículo 14.",
+   "hora": "22:02",
+   "media_id": "18113488901170970",
+   "enlace": "https://www.instagram.com/reel/De2X0CEDzxT/",
+   "threads_id": "18129173816494034"
+  },
+  {
+   "slot": "2026-10-23#045",
+   "fecha": "2026-10-23T20:38:23.567805+00:00",
+   "seccion": "empleo",
+   "titular": "Los sindicatos convocan huelga general el 11 de noviembre",
+   "noticia_id": "3b1ab9d6c8645544",
+   "url_fuente": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPZTRFd2Vmejh2WDhySWpBbzVCdGZaR0NoY0hqeGlCU19PeXJnTHNtNHBaUC0zUndkcXo1RFlkelgxQnJXZHlkNl9IbXM0YmVta280Mnh1LU9KY2xIRWdvZ09QTVNRRkFDelNuemFkUlNveFpwaUQ4blN0VjhXVXUzN0NpdXZOUnNZdExZYnpYT2dyQmxPbkgyWm9RZE5lOHZnSzE1aFItSi1OTmFyNXk4Qm9tc1EzQQ?oc=5",
+   "medios": [
+    "Grant Thornton España",
+    "TeleElx",
+    "Heraldo-Diario de Soria",
+    "Atlántico Hoy",
+    "PressDigital"
+   ],
+   "formato": "carrusel",
+   "entradilla": "UGT y CCOO piden sumarse a la protesta por los salarios y el precio de la vivienda, con movilizaciones en Elche, Soria y Canarias.",
+   "hora": "22:37",
+   "media_id": "18170593777465402",
+   "enlace": "https://www.instagram.com/p/De2b96Mkv9c/",
+   "threads_id": "18110577275123290"
+  },
+  {
+   "slot": "2026-10-23#046",
+   "fecha": "2026-10-23T21:01:51.847288+00:00",
+   "seccion": "sociedad",
+   "titular": "El cribado de cáncer de mama se ampliará a mujeres de 45 a 74 años",
+   "noticia_id": "722560947457471b",
+   "url_fuente": "https://www.lavanguardia.com/vida/20261023/11666592/seis-anos-comunidades-deberan-ofrecer-cribado-cancer-mama-mujeres-45-74-anos.html",
+   "medios": [
+    "El País"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Sanidad y las comunidades acuerdan que en seis años todas las autonomías ofrezcan la prueba a más mujeres.",
+   "hora": "23:01",
+   "media_id": "17925425277443238",
+   "enlace": "https://www.instagram.com/p/De2epKngUwM/",
+   "threads_id": "18084526757687601"
+  },
+  {
+   "slot": "2026-10-23#047",
+   "fecha": "2026-10-23T21:33:22.347669+00:00",
+   "seccion": "actualidad",
+   "titular": "Pedraz da 15 días al PSOE para entregar la documentación de sus abogados",
+   "noticia_id": "c6e098c961c48d23",
+   "url_fuente": "https://www.elmundo.es/espana/2026/10/23/6adb4915fdddff3d6d8b4595.html",
+   "medios": [
+    "El Mundo",
+    "20minutos"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El juez de la Audiencia Nacional rechaza que la consulta a la Abogacía paralice su requerimiento y pide al partido cumplir \"sin más demora\".",
+   "hora": "23:32",
+   "media_id": "18101391758565130",
+   "enlace": "https://www.instagram.com/p/De2iQNPoItj/",
+   "threads_id": "18095942792669890"
+  },
+  {
+   "slot": "2026-10-24#000",
+   "fecha": "2026-10-23T22:13:24.494731+00:00",
+   "seccion": "educacion",
+   "titular": "La Policía alerta de las cuentas \"curis\" que ridiculizan a alumnos y profesores",
+   "noticia_id": "5351309e655af7fb",
+   "url_fuente": "https://elpais.com/educacion/2026-10-23/la-policia-alerta-de-un-nuevo-ciberacoso-los-curis-que-ridiculizan-a-alumnos-y-profesores-en-redes.html",
+   "medios": [
+    "EL PAÍS",
+    "Magisnet"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Aragón ya ha enviado a sus centros un protocolo de seis medidas para actuar ante estos perfiles anónimos de redes sociales.",
+   "hora": "00:13",
+   "media_id": "18095474333682863",
+   "enlace": "https://www.instagram.com/p/De2m2mAmSII/",
+   "threads_id": "18118004591089986"
+  },
+  {
+   "slot": "2026-10-24#001",
+   "fecha": "2026-10-23T22:37:41.409395+00:00",
+   "seccion": "actualidad",
+   "titular": "Sánchez acepta ser entrevistado por Jordi Wild en The Wild Project",
+   "noticia_id": "997a411fb2b0f968",
+   "url_fuente": "https://www.20minutos.es/nacional/pedro-sanchez-acepta-entrevista-youtuber-jordi-wild-tras-si-nunez-feijoo-santiago-abascal-ada-colau_7052857_0.html",
+   "medios": [
+    "20minutos.es",
+    "Portada",
+    "elDiario.es"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Es el último de los cuatro candidatos en aceptar. Las entrevistas se emitirán el 13 de noviembre, según informa elDiario.es.",
+   "hora": "00:36",
+   "media_id": "17923726257223358",
+   "enlace": "https://www.instagram.com/p/De2pmICFQ-L/",
+   "threads_id": "18134101348708469"
+  },
+  {
+   "slot": "2026-10-24#002",
+   "fecha": "2026-10-23T23:07:36.734590+00:00",
+   "seccion": "internacional",
+   "titular": "Ucrania y Rusia canjean 270 prisioneros cada una y pactan una tregua en Oleshki",
+   "noticia_id": "e3cd930bc5b1603e",
+   "url_fuente": "https://elpais.com/internacional/2026-10-23/ucrania-y-rusia-intercambian-prisioneros-y-anuncian-un-alto-el-fuego-para-evacuar-la-castigada-oleshki.html",
+   "medios": [
+    "EL PAÍS"
+   ],
+   "formato": "carrusel",
+   "entradilla": "La tregua, que según la Casa Blanca empezaría el 29 de octubre, permitiría evacuar a unos 6.000 civiles atrapados en la ciudad de Jersón.",
+   "hora": "01:07",
+   "media_id": "17949039183300813",
+   "enlace": "https://www.instagram.com/p/De2tCMqHeiB/",
+   "threads_id": "18009789467779460"
+  },
+  {
+   "slot": "2026-10-24#003",
+   "fecha": "2026-10-23T23:38:00.210255+00:00",
+   "seccion": "cultura",
+   "titular": "Patti Smith canta a capela en la gala de los Premios Princesa de Asturias",
+   "noticia_id": "26b06caaf6e8f86c",
+   "url_fuente": "https://elpais.com/cultura/2026-10-23/unos-premios-princesa-de-asturias-por-la-union-de-la-humanidad-la-democracia-y-el-tiquitaca-europeo.html",
+   "medios": [
+    "EL PAÍS",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "La princesa Leonor entregó en el Teatro Campoamor de Oviedo los galardones de la 46.ª edición, con Messi, Barnes o Garton Ash.",
+   "hora": "01:37",
+   "media_id": "18643119916032406",
+   "enlace": "https://www.instagram.com/p/De2wgaticcL/",
+   "threads_id": "18090840026239293"
+  },
+  {
+   "slot": "2026-10-24#004",
+   "fecha": "2026-10-24T00:04:15.807100+00:00",
+   "seccion": "deportes",
+   "titular": "Peres Jepchirchir, suspendida provisionalmente por dar positivo por EPO",
+   "noticia_id": "7447e8bd63f92b11",
+   "url_fuente": "https://elpais.com/deportes/2026-10-23/la-keniana-peres-jepchirchir-una-de-las-mas-grandes-maratonianas-del-siglo-da-positivo-por-epo.html",
+   "medios": [
+    "EL PAÍS"
+   ],
+   "formato": "carrusel",
+   "entradilla": "La AIU suspende a la campeona olímpica y mundial de maratón por un control anterior al Maratón de Sídney.",
+   "hora": "02:03",
+   "media_id": "18568214479073185",
+   "enlace": "https://www.instagram.com/p/De2zhm4D9on/",
+   "threads_id": "18023144657927515"
+  },
+  {
+   "slot": "2026-10-24#005",
+   "fecha": "2026-10-24T00:53:42.194843+00:00",
+   "seccion": "actualidad",
+   "titular": "La Audiencia Nacional amnistía a los 12 CDR acusados de terrorismo",
+   "noticia_id": "00c6b5c21202f2ba",
+   "url_fuente": "https://elpais.com/espana/2026-10-23/la-audiencia-nacional-aplica-la-amnistia-a-los-cdr-acusados-de-terrorismo.html",
+   "medios": [
+    "EL PAÍS",
+    "elDiario.es"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El tribunal archiva la causa tres meses después de que el TJUE avalara la ley de amnistía, según informan EL PAÍS y elDiario.es.",
+   "hora": "02:52",
+   "media_id": "18009718271778533",
+   "enlace": "https://www.instagram.com/p/De25L6ojRGx/",
+   "threads_id": "17893858854615512"
+  },
+  {
+   "slot": "2026-10-24#006",
+   "fecha": "2026-10-24T01:05:48.442608+00:00",
+   "seccion": "actualidad",
+   "titular": "PSOE y Frente Amplio pactan listas conjuntas al Senado: así se reparten los puestos",
+   "noticia_id": "a9a164ec2f91f8b2",
+   "url_fuente": "https://www.elmundo.es/elecciones/elecciones-generales/2026/10/24/6adbb04ae85ece223e8b45a7.html",
+   "medios": [
+    "elDiario.es",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Los socialistas se quedan con el 70% de los puestos y el Frente Amplio ocupará sobre todo el segundo lugar, según elDiario.es y El Mundo.",
+   "hora": "03:04",
+   "media_id": "18231852631334863",
+   "enlace": "https://www.instagram.com/p/De26kYeGq9f/",
+   "threads_id": "18086807885705739"
+  },
+  {
+   "slot": "2026-10-24#007",
+   "fecha": "2026-10-24T01:34:04.978059+00:00",
+   "seccion": "actualidad",
+   "titular": "Dani Martín aplaza sus dos conciertos en Barcelona",
+   "noticia_id": "d0819665712d8ee3",
+   "url_fuente": "https://www.lavanguardia.com/cultura/20261023/11666704/dani-martin-aplaza-conciertos-barcelona-situacion-familiar-extrema-gravedad.html",
+   "medios": [
+    "El País",
+    "Portada (medio de la noticia principal)"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El cantante alega una situación familiar “de extrema gravedad”. Las nuevas fechas se comunicarán en los próximos días.",
+   "hora": "03:33",
+   "media_id": "18092676869192843",
+   "enlace": "https://www.instagram.com/p/De29yZvDOCa/",
+   "threads_id": "18105970400342837"
+  },
+  {
+   "slot": "2026-10-24#008",
+   "fecha": "2026-10-24T02:11:35.873322+00:00",
+   "seccion": "politica",
+   "titular": "Las listas de Feijóo obligan a cinco presidentes autonómicos del PP a remodelar sus gobiernos",
+   "noticia_id": "e311f9ad585ab5f1",
+   "url_fuente": "https://www.20minutos.es/nacional/las-listas-pp-obligan-rueda-manueco-buruaga-llorca-lopez-miras-remodelar-sus-gobiernos-regionales_7052770_0.html",
+   "medios": [
+    "20minutos"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Varios consejeros irán en las candidaturas del 29 de noviembre y deberán dejar sus cargos, según informa 20minutos.",
+   "hora": "04:11",
+   "media_id": "18601847773071497",
+   "enlace": "https://www.instagram.com/p/De3CGQSjowY/",
+   "threads_id": "17998704516041979"
+  },
+  {
+   "slot": "2026-10-24#009",
+   "fecha": "2026-10-24T02:56:13.935462+00:00",
+   "seccion": "economia",
+   "titular": "El Ibex 35 cae un 1,74% en la semana y se aleja de los 19.000 puntos",
+   "noticia_id": "0a1a5e1255979da5",
+   "url_fuente": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQOVRwTXVXVjBKU3NwWTZXTHRtVzI3a1pBeExVMWxiVWg4RTJJaFpROHhIMlFnX1gzU1BCaGoxUUdLNjRqckZUaWU4aHlIU3Y5azZnZmNNZDB0bTlLZlUwQmdNcmtrdm5mWlRROF9YLWlRVlptZTZYYmk2dHMzYm9GS1ZScjNuRGtZQ2Z4ZllJdEEyZnlaVFc5NkJYclJCQVV1YXBrcF93bDJoc254MGxORmt4R21QcFlpLWFNa0JDclBUWUVzNWIxc2F6d3ZWU1ZwWmw4?oc=5",
+   "medios": [
+    "Noticias Bancarias",
+    "El Boletín",
+    "Bolsamania"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El petróleo, por encima de 114 dólares, y la deuda de Francia pesan sobre la bolsa española, según varios medios.",
+   "hora": "04:55",
+   "media_id": "18114525005177771",
+   "enlace": "https://www.instagram.com/p/De3HKkmFe7W/",
+   "threads_id": "18134073958727984"
+  },
+  {
+   "slot": "2026-10-24#010",
+   "fecha": "2026-10-24T03:01:41.678523+00:00",
+   "seccion": "finanzas",
+   "titular": "Los bancos pagan hasta un 2% por traspasar tus fondos de inversión",
+   "noticia_id": "51d8e93044014351",
+   "url_fuente": "https://www.expansion.com/mercados/2026/10/23/6adbd24a468aeb97768b456f.html",
+   "medios": [
+    "Expansión"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Bankinter, BBVA, Self Bank, Abanca y Caixa Popular lanzan bonificaciones de hasta 30.000 euros por llevarles tus fondos.",
+   "hora": "05:01",
+   "media_id": "17941937502380424",
+   "enlace": "https://www.instagram.com/p/De3H0FHjb6v/",
+   "threads_id": "18113091425595521"
+  },
+  {
+   "slot": "2026-10-24#011",
+   "fecha": "2026-10-24T03:33:15.158615+00:00",
+   "seccion": "actualidad",
+   "titular": "Muere María José Verdú, diputada de Vox en el Parlament balear",
+   "noticia_id": "c3cb6d8e26af9ced",
+   "url_fuente": "https://www.20minutos.es/baleares/muere-diputada-vox-parlamento-balear-maria-jose-verdu_7052792_0.html",
+   "medios": [
+    "20minutos.es",
+    "Europa Press",
+    "Ultima Hora"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Tenía 58 años y falleció el viernes por la tarde a causa de una larga enfermedad, según fuentes de su grupo.",
+   "hora": "05:32",
+   "media_id": "18219688204355695",
+   "enlace": "https://www.instagram.com/p/De3LataFJ5S/",
+   "threads_id": "18376145452245217"
+  },
+  {
+   "slot": "2026-10-24#012",
+   "fecha": "2026-10-24T04:07:13.174726+00:00",
+   "seccion": "actualidad",
+   "titular": "Incidentes en Mahón durante un mitin de Vox con Santiago Abascal",
+   "noticia_id": "dbf2117f1715e9d9",
+   "url_fuente": "https://www.elmundo.es/baleares/2026/10/24/6adbdc8921efa0da098b45ba.html",
+   "medios": [
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Según El Mundo, parte de unos 300 manifestantes superó los filtros policiales y llegó cerca del acto. La furgoneta de Abascal fue golpeada.",
+   "hora": "06:06",
+   "media_id": "18125966332907559",
+   "enlace": "https://www.instagram.com/p/De3PTtqlcVj/",
+   "threads_id": "18057195629801283"
+  },
+  {
+   "slot": "2026-10-24#013",
+   "fecha": "2026-10-24T04:46:28.537233+00:00",
+   "seccion": "sociedad",
+   "titular": "Cáncer gástrico: así cambia entre hombres y mujeres, según un estudio",
+   "noticia_id": "817e7cd9e30c067b",
+   "url_fuente": "https://www.lavanguardia.com/vida/salud/20261024/11666678/cancer-gastrico-que-cambia-hombres-mujeres.html",
+   "medios": [
+    "Hospital Clínic Barcelona",
+    "Journal of Clinical Medicine"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Una revisión de 38 estudios y más de 500.000 pacientes halla diferencias en frecuencia, tipo de tumor y supervivencia.",
+   "hora": "06:46",
+   "media_id": "18138654895643186",
+   "enlace": "https://www.instagram.com/p/De3T0kEgJ9X/",
+   "threads_id": "17948242521347514"
+  },
+  {
+   "slot": "2026-10-24#014",
+   "fecha": "2026-10-24T05:14:31.686402+00:00",
+   "seccion": "actualidad",
+   "titular": "Muere un niño de 20 meses ahogado en una piscina de Tous, en Valencia",
+   "noticia_id": "e96015b2eec836d6",
+   "url_fuente": "https://www.20minutos.es/comunidad-valenciana/valencia/muere-ahogado-un-nino-20-meses-reanimado-otro-tres-anos-caer-piscina-valencia_7052854_0.html",
+   "medios": [
+    "20minutos.es",
+    "Portada",
+    "Levante-EMV"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Otro menor de 3 años ha sido reanimado y trasladado al Hospital de La Ribera, según informa el CICU.",
+   "hora": "07:13",
+   "media_id": "18345271687256326",
+   "enlace": "https://www.instagram.com/p/De3XApbFKWx/",
+   "threads_id": "17991054936066663"
+  },
+  {
+   "slot": "2026-10-24#015",
+   "fecha": "2026-10-24T05:48:38.973780+00:00",
+   "seccion": "tecnologia",
+   "titular": "Una de cada cuatro startups en España ya es de un solo fundador",
+   "noticia_id": "f040862e649b6a68",
+   "url_fuente": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQLXVvYV9iWm9CWDRLZ01SRFI0NWZxb1ZPcnl1QmRUQjRBdHd2Q0t4OUJnZUd3aHlzc0Nadk5xTk92WTJ4Q3hzT0xpXy1VQmVvaU56V0ZJUTJFVTFVUG1zc2NJdF82MXJuM2pMSE1rSjBTN0w4Z1NucWVMN1oxMk1KX0VrWHk?oc=5",
+   "medios": [
+    "El Ecosistema Startup",
+    "El Español",
+    "PressDigital",
+    "Computerworld España"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Los 'solopreneurs' alcanzan el 26,5% de las startups españolas, un máximo histórico, según varios medios.",
+   "hora": "07:48",
+   "media_id": "18140207740626622",
+   "enlace": "https://www.instagram.com/p/De3a6yOkf0T/",
+   "threads_id": "18109711436239270"
+  },
+  {
+   "slot": "2026-10-24#016",
+   "fecha": "2026-10-24T06:30:07.019749+00:00",
+   "seccion": "actualidad",
+   "titular": "Cotizaron más de 40 años y cobran pensión reducida: marchan en Madrid",
+   "noticia_id": "26b89ff367ef2581",
+   "url_fuente": "https://www.20minutos.es/nacional/vivir-con-una-pension-reducida-pesar-haber-cotizado-40-anos-hemos-trabajado-toda-vida-hemos-levantado-espana_7052251_0.html",
+   "medios": [
+    "20minutos"
+   ],
+   "formato": "reel",
+   "entradilla": "Los afectados por los coeficientes reductores piden una ley que elimine las penalizaciones antes de las elecciones del 29-N.",
+   "hora": "08:29",
+   "media_id": "18121239557078253",
+   "enlace": "https://www.instagram.com/reel/De3fkjhkhl4/",
+   "threads_id": "17913456909477136"
+  },
+  {
+   "slot": "2026-10-24#017",
+   "fecha": "2026-10-24T06:43:09.701083+00:00",
+   "seccion": "actualidad",
+   "titular": "Messi recoge el Princesa de Asturias de los Deportes en Oviedo",
+   "noticia_id": "c62198f2077a2104",
+   "url_fuente": "https://www.20minutos.es/deportes/futbol/emocion-leo-messi-con-discurso-leonor-los-premios-princesa-asturias-gran-definicion-jugador-argentino_7052845_0.html",
+   "medios": [
+    "20minutos.es"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El futbolista argentino recibió el premio en el Teatro Campoamor y la princesa Leonor lo citó en su discurso.",
+   "hora": "08:42",
+   "media_id": "18166496437488849",
+   "enlace": "https://www.instagram.com/p/De3hJd5lFh0/",
+   "threads_id": "18015082697986284"
+  },
+  {
+   "slot": "2026-10-24#018",
+   "fecha": "2026-10-24T07:14:24.830021+00:00",
+   "seccion": "internacional",
+   "titular": "Irán asegura que dos superpetroleros chocaron con minas en Ormuz",
+   "noticia_id": "52faf8a971c2e979",
+   "url_fuente": "https://www.elmundo.es/internacional/2026/10/24/6adc5721e85ecebf648b459a.html",
+   "medios": [
+    "El Mundo",
+    "El Tiempo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "La Guardia Revolucionaria dice que los buques, con más de 4,5 millones de barriles de crudo, quedaron inmovilizados y abandonados.",
+   "hora": "09:14",
+   "media_id": "18120374807058139",
+   "enlace": "https://www.instagram.com/p/De3kvkWEVZJ/",
+   "threads_id": "17885493870511056"
+  },
+  {
+   "slot": "2026-10-24#019",
+   "fecha": "2026-10-24T07:48:42.754800+00:00",
+   "seccion": "cultura",
+   "titular": "La Seminci se defiende como \"espacio de libertad creativa\" ante VOX",
+   "noticia_id": "fecf5834005aecaa",
+   "url_fuente": "https://elpais.com/cultura/cine/2026-10-23/la-seminci-se-defiende-en-su-gala-inaugural-como-espacio-de-libertad-creativa-ante-los-ataques-de-vox.html",
+   "medios": [
+    "EL PAÍS"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El festival de Valladolid respondió en su gala inaugural a las críticas por su supuesta falta de neutralidad ideológica.",
+   "hora": "09:48",
+   "media_id": "18108777401263101",
+   "enlace": "https://www.instagram.com/p/De3oo34m04s/",
+   "threads_id": "18132612422499352"
+  },
+  {
+   "slot": "2026-10-24#020",
+   "fecha": "2026-10-24T08:06:08.731817+00:00",
+   "seccion": "deportes",
+   "titular": "Márquez gana la sprint en Australia y Martín se fractura el brazo",
+   "noticia_id": "d3f93359702e7f7a",
+   "url_fuente": "https://elpais.com/deportes/motociclismo/2026-10-24/marquez-firma-su-enesima-maravilla-y-martin-se-rompe-tras-una-fuerte-caida-en-el-gp-de-australia.html",
+   "medios": [
+    "El País",
+    "Deportes"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El piloto de Ducati suma su noveno triunfo en sprint y es líder con 365 puntos. Martín, de Aprilia, no correrá el domingo, según El País.",
+   "hora": "10:05",
+   "media_id": "18167798659490336",
+   "enlace": "https://www.instagram.com/p/De3qqvJm9um/",
+   "threads_id": "17888360568686296"
+  },
+  {
+   "slot": "2026-10-24#021",
+   "fecha": "2026-10-24T08:39:21.808209+00:00",
+   "seccion": "actualidad",
+   "titular": "Milei vuelve a llamar \"ladrón corrupto\" a Sánchez en un discurso en Argentina",
+   "noticia_id": "661aca314b44a9be",
+   "url_fuente": "https://www.20minutos.es/internacional/milei-llama-nuevo-ladron-corrupto-pedro-sanchez-tras-su-polemico-viaje-madrid_7052885_0.html",
+   "medios": [
+    "20minutos",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Lo hizo dos días después de su polémico viaje a Madrid y a seis semanas de las elecciones del 29 de noviembre en España.",
+   "hora": "10:38",
+   "threads_id": "17961315099217465"
+  },
+  {
+   "slot": "2026-10-24#022",
+   "fecha": "2026-10-24T09:09:36.418682+00:00",
+   "seccion": "consumo",
+   "titular": "La cesta de la compra sube un 39,5% en cinco años, según El Periódico",
+   "noticia_id": "f92486c528c1d71a",
+   "url_fuente": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQXzZvMi1Yb0UtaWducEJyeXpJNVpYWlVmUjI5Y01ETElTN0NiN2xJM1d5UEFWeWZXMWRKNUV2WUtnbXFlTFBQUG5FcThnQk85YUpaNWcxSjIySmZPQi1KMk9JZ3lObWcwZ1F6UWNYVWE1ZFFHNEVwamdhbDIteTVTSHl3ZEk4NjZOSjRBWHFtWXVJRldWTy1VekF5Um8xalV4WEdBRdIBpAFBVV95cUxQXzZvMi1Yb0UtaWducEJyeXpJNVpYWlVmUjI5Y01ETElTN0NiN2xJM1d5UEFWeWZXMWRKNUV2WUtnbXFlTFBQUG5FcThnQk85YUpaNWcxSjIySmZPQi1KMk9JZ3lObWcwZ1F6UWNYVWE1ZFFHNEVwamdhbDIteTVTSHl3ZEk4NjZOSjRBWHFtWXVJRldWTy1VekF5Um8xalV4WEdBRQ?oc=5",
+   "medios": [
+    "El Periódico",
+    "El Diario Montañés"
+   ],
+   "formato": "reel",
+   "entradilla": "La OCU apunta que se pueden ahorrar hasta 1.310 euros al año. Catalunya figura entre las comunidades más caras.",
+   "hora": "11:09",
+   "media_id": "17999862516033953",
+   "enlace": "https://www.instagram.com/reel/De3xz5VDSrm/",
+   "threads_id": "17913825132519980"
+  },
+  {
+   "slot": "2026-10-24#024",
+   "fecha": "2026-10-24T10:01:07.058706+00:00",
+   "seccion": "politica",
+   "titular": "Felipe VI pide un \"compromiso diario\" con la democracia ante las elecciones",
+   "noticia_id": "b2a18d441f7dca48",
+   "url_fuente": "https://www.elmundo.es/espana/2026/10/23/6adb810afdddfff10b8b4580.html",
+   "medios": [
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "En los Premios Princesa de Asturias, el Rey recordó que votar es una \"altísima responsabilidad\" a poco más de un mes de las generales.",
+   "hora": "12:00",
+   "media_id": "18237315298320043",
+   "enlace": "https://www.instagram.com/p/De33zdHG8xN/",
+   "threads_id": "18436052695198338"
+  },
+  {
+   "slot": "2026-10-24#025",
+   "fecha": "2026-10-24T10:52:10.721481+00:00",
+   "seccion": "economia",
+   "titular": "La fabricación de coches eléctricos en España se disparó un 153% en septiembre",
+   "noticia_id": "cdb089db71a81a2d",
+   "url_fuente": "https://cincodias.elpais.com/companias/2026-10-24/espana-surfea-la-crisis-del-motor-transformando-sus-plantas-al-electrico-la-produccion-se-duplicara-en-2026.html",
+   "medios": [
+    "EL PAÍS",
+    "Cinco Días"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Los cuatro nuevos modelos de Volkswagen impulsan la producción, que según EL PAÍS se duplicará en 2026.",
+   "hora": "12:51",
+   "media_id": "17961190017249632",
+   "enlace": "https://www.instagram.com/p/De39pqwm8ja/",
+   "threads_id": "18167508508472827"
+  },
+  {
+   "slot": "2026-10-24#026",
+   "fecha": "2026-10-24T11:17:24.302796+00:00",
+   "seccion": "finanzas",
+   "titular": "Más de 10.000 millones en dividendos antes de que acabe el año",
+   "noticia_id": "562c5ed015589cac",
+   "url_fuente": "https://www.expansion.com/inversion/2026/10/24/6adb8e09468aeb3f6b8b4577.html",
+   "medios": [
+    "Expansión"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Una treintena de empresas de la Bolsa española pagarán dividendo. Inditex y Santander abren el calendario el 2 de noviembre.",
+   "hora": "13:16",
+   "media_id": "18181214773438195",
+   "enlace": "https://www.instagram.com/p/De4AifJlWip/",
+   "threads_id": "18011329569003530"
+  },
+  {
+   "slot": "2026-10-24#027",
+   "fecha": "2026-10-24T11:53:40.361064+00:00",
+   "seccion": "actualidad",
+   "titular": "Un incendio destruye El Nido del Águila, la casa alpina de Hitler",
+   "noticia_id": "f41d9ecb73d78b5b",
+   "url_fuente": "https://elpais.com/internacional/2026-10-24/las-llamas-destruyen-el-nido-del-aguila-la-famosa-residencia-de-hitler-en-los-alpes.html",
+   "medios": [
+    "EL PAÍS",
+    "elDiario.es",
+    "20minutos",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "La policía de Baviera ha detenido a un sospechoso y investiga si el fuego fue intencionado. No hay heridos.",
+   "hora": "13:52",
+   "media_id": "17883642681533984",
+   "enlace": "https://www.instagram.com/p/De4EtilGyya/",
+   "threads_id": "17992280916060540"
+  },
+  {
+   "slot": "2026-10-24#028",
+   "fecha": "2026-10-24T12:22:05.902539+00:00",
+   "seccion": "actualidad",
+   "titular": "Esta madrugada se atrasan los relojes: llega el horario de invierno",
+   "noticia_id": "db71194c051cdebd",
+   "url_fuente": "https://www.elmundo.es/como/2026/10/24/6adb3559e85ece6d4d8b4590.html",
+   "medios": [
+    "El Mundo",
+    "El País",
+    "Vozpópuli",
+    "GaliciaPress"
+   ],
+   "formato": "reel",
+   "entradilla": "A las 3:00 serán las 2:00 en la España peninsular y la noche del sábado al domingo durará 25 horas.",
+   "hora": "14:21",
+   "media_id": "18097534373534285",
+   "enlace": "https://www.instagram.com/reel/De4H2dwE1Il/",
+   "threads_id": "18025717451924178"
+  },
+  {
+   "slot": "2026-10-24#030",
+   "fecha": "2026-10-24T13:05:44.829776+00:00",
+   "seccion": "actualidad",
+   "titular": "Feijóo promete que no indultará a los corruptos si gobierna",
+   "noticia_id": "8c85e0c2302743c1",
+   "url_fuente": "https://www.lavanguardia.com/politica/20261024/11667203/feijoo-advierte-psoe-indultar-corruptos-me-encargare-paguen.html",
+   "medios": [
+    "elDiario.es",
+    "Europa Press"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El líder del PP acusa al Gobierno de adelantar las elecciones por sus problemas judiciales y anuncia rebajas de impuestos.",
+   "hora": "15:04",
+   "media_id": "18165881722490031",
+   "enlace": "https://www.instagram.com/p/De4M9FxljWj/",
+   "threads_id": "18117921743005867"
+  },
+  {
+   "slot": "2026-10-24#031",
+   "fecha": "2026-10-24T13:36:05.175204+00:00",
+   "seccion": "tecnologia",
+   "titular": "Un detector atribuye a la IA el 99% de la novela premiada con 20.000 €",
+   "noticia_id": "45f86fe656439fcc",
+   "url_fuente": "https://www.xataka.com/robotica-e-ia/pangram-donde-agua-trabaja-david-silva-rojas-ia-al-99-problema-siempre-que-ia-no-infalible",
+   "medios": [
+    "Xataka",
+    "MARCA",
+    "Demócrata",
+    "El País"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Según El País, el detector Pangram marca 'Donde el agua trabaja' como texto generado por IA. Los expertos advierten de que no es una prueba.",
+   "hora": "15:35",
+   "media_id": "18195336469404862",
+   "enlace": "https://www.instagram.com/p/De4Qbj5kXnX/",
+   "threads_id": "17982667362107836"
+  },
+  {
+   "slot": "2026-10-24#032",
+   "fecha": "2026-10-24T14:05:18.390187+00:00",
+   "seccion": "actualidad",
+   "titular": "Cientos de familias protestan en Madrid en apoyo a la huelga docente",
+   "noticia_id": "06468c1648936785",
+   "url_fuente": "https://www.eldiario.es/madrid/centenares-familias-protestan-frente-consejeria-educacion-madrid-apoyo-huelga-educacion-no-hay-futuro_1_13612263.html",
+   "medios": [
+    "elDiario.es",
+    "Europa Press"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Se concentraron ante la Consejería de Educación y piden a Zarzalejo que negocie con los sindicatos. La huelga indefinida arrancó el 14 de octubre.",
+   "hora": "16:04",
+   "media_id": "18227963047328426",
+   "enlace": "https://www.instagram.com/p/De4TwhWFTK1/",
+   "threads_id": "18095595398657673"
+  },
+  {
+   "slot": "2026-10-24#033",
+   "fecha": "2026-10-24T14:36:10.518294+00:00",
+   "seccion": "actualidad",
+   "titular": "Los consulados trabajan el fin de semana para cumplir el plazo del Supremo",
+   "noticia_id": "b08671d74bf12d2a",
+   "url_fuente": "https://www.20minutos.es/nacional/los-consulados-refuerzan-sus-plantillas-trabajan-fin-semana-para-cumplir-plazo-supremo-sobre-ley-nietos_7052930_0.html",
+   "medios": [
+    "20minutos.es"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Exteriores busca entregar antes del miércoles los datos de 163.020 afectados por la suspensión cautelar del voto CERA.",
+   "hora": "16:34",
+   "media_id": "18161586586442970",
+   "enlace": "https://www.instagram.com/p/De4XS6sFc0P/",
+   "threads_id": "18123650776937267"
+  },
+  {
+   "slot": "2026-10-24#034",
+   "fecha": "2026-10-24T15:04:48.278229+00:00",
+   "seccion": "internacional",
+   "titular": "Francia blinda las protestas del 24-O con 70.000 policías y 135 detenidos",
+   "noticia_id": "95cc96a04735b50e",
+   "url_fuente": "https://elpais.com/internacional/2026-10-24/francia-contiene-el-aliento-ante-una-nueva-jornada-de-protestas.html",
+   "medios": [
+    "El País",
+    "El Mundo"
+   ],
+   "formato": "reel",
+   "entradilla": "Hay marchas prohibidas en varias ciudades, cambio de ruta en París y primeros disturbios en Marsella una semana después del 17-O.",
+   "hora": "17:04",
+   "media_id": "17949587715302877",
+   "enlace": "https://www.instagram.com/reel/De4aeXAD9Cz/",
+   "threads_id": "18076905086562502"
+  },
+  {
+   "slot": "2026-10-24#035",
+   "fecha": "2026-10-24T15:36:25.372541+00:00",
+   "seccion": "actualidad",
+   "titular": "La reina Letizia se cae al resbalar en un barco en Llanes",
+   "noticia_id": "0ee8dc2e685de261",
+   "url_fuente": "https://www.20minutos.es/nacional/reina-letizia-sufre-aparatosa-cauda-resbalarse-bordo-barco-puerto-asturiano-llanes_7052973_0.html",
+   "medios": [
+    "20minutos",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Ocurrió durante la visita de la Familia Real al Pueblo Ejemplar 2026, la Cofradía de Pescadores de Santa Ana de Llanes.",
+   "hora": "17:35",
+   "media_id": "17915026602547666",
+   "enlace": "https://www.instagram.com/p/De4eLJblIwr/",
+   "threads_id": "18124283399316921"
+  },
+  {
+   "slot": "2026-10-24#036",
+   "fecha": "2026-10-24T16:05:57.197382+00:00",
+   "seccion": "deportes",
+   "titular": "Martínez Munuera arbitrará el Barça - Real Madrid",
+   "noticia_id": "e0594d173c611167",
+   "url_fuente": "https://www.lavanguardia.com/deportes/futbol/20261024/11667149/martinez-munuera-arbitrara-barca-real-madrid.html",
+   "medios": [
+    "La Vanguardia",
+    "VAVEL.com",
+    "ABC"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Será su quinto clásico. El partido se juega este domingo a las 21.00 h y el VAR será para Iglesias Villanueva.",
+   "hora": "18:05",
+   "media_id": "18132366826772024",
+   "enlace": "https://www.instagram.com/p/De4hkdtoHlI/",
+   "threads_id": "18120369736992024"
+  },
+  {
+   "slot": "2026-10-24#037",
+   "fecha": "2026-10-24T16:37:43.862474+00:00",
+   "seccion": "gastronomia",
+   "titular": "La Pornacal, la braña de Somiedo con teitos a la que solo se llega a pie",
+   "noticia_id": "d07c69c63f88bef7",
+   "url_fuente": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPY1VVTDYyVVgzSzIzdXhxRUFfNkNnX2MzcFJ5WlNrYnBfU2JqeFo2bTJsd3ZtcFNSZ3UyMl9VV0ZhYWdPeUpHS09SU1BYM0VnMDBzUVlVdWFiTlQ5MnlYYy1lQTBlQnhWMTcyc083MXRlZjBHOGVxV004cUgxNHRGdTNzNjA2YXQ4RjZTaElsOHlIdTViYndPY0RsQnZnMTU1UmNhUXFWbVM4ZDZpMmxpT3RQcjRfd08tSkRrcERzMTYyTzZScnFaYVdaSE5ma0h0RV8xZHFKcTNNaHV1Tm0zZURtWFdHU3ZITTNHZXcxZ19JODNFRmNPQjdFd29XdnM5azBRSW5R0gGgAkFVX3lxTE5jM0swZ2RtQm5sMlIyTmJkRjhxekxHN0I5YW5taWQwa2V1azI0b1lyZ0lvOHpmdXpXZHZQRTA4M3ViNkZIa096UmE0TDZHMUg2d3hocjF2X3F0N0lPODlQdVpnZVJCOHlvNS1mbnphRWtsdmhpU2hGa2V4cTBUTVFEM2N3bTJEaTN5UURaTHJwUmJaVFdYR0JoRVF2bjlRb2xJSVhITHROMVNXRzBvT2ZFaG5icmxHWG5NWEdvbjUtVy1GYnpFZjFMVnRvZkJJNlpzaGljcXlCWW1UVk1oZUhMLUJIUVBGTWc0Q0pTT1JmcGtpWmpYSnJrOGFvSnh3LW1WX3ZFQUlzZWFkWmVfbGFhOHZ0b0ppRWoyU3JzYTlaYw?oc=5",
+   "medios": [
+    "Directo al Paladar"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Una treintena de teitos agrupados junto al río, en uno de los conjuntos mejor conservados de Asturias, según Directo al Paladar.",
+   "hora": "18:37",
+   "media_id": "18022766996722277",
+   "enlace": "https://www.instagram.com/p/De4lNNtGotF/",
+   "threads_id": "17924611110440771"
+  },
+  {
+   "slot": "2026-10-24#038",
+   "fecha": "2026-10-24T17:08:44.378256+00:00",
+   "seccion": "actualidad",
+   "titular": "Españoles reclutados para estafar desde Turquía, Ucrania y los Balcanes",
+   "noticia_id": "1c0847fe92097f36",
+   "url_fuente": "https://www.elmundo.es/cronica/2026/10/24/6ad57b98e4d4d80d138b4586.html",
+   "medios": [
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "La Policía Nacional ha constatado que hay compatriotas trabajando como teleoperadores en oficinas clandestinas de fraude.",
+   "hora": "19:07",
+   "media_id": "17890325577653516",
+   "enlace": "https://www.instagram.com/p/De4ow43G-qr/",
+   "threads_id": "18117015310817123"
+  },
+  {
+   "slot": "2026-10-24#039",
+   "fecha": "2026-10-24T17:38:44.244119+00:00",
+   "seccion": "actualidad",
+   "titular": "Rufián y Montero estrenan tándem en Barcelona y piden \"someter\" al PSOE",
+   "noticia_id": "19f0539f50b8550e",
+   "url_fuente": "https://www.20minutos.es/nacional/rufian-montero-llaman-someter-psoe-presumen-alianza-usurpando-nombre-los-colau-frente-somos-nosotros_7052967_0.html",
+   "medios": [
+    "20minutos.es",
+    "Portada",
+    "El Mundo"
+   ],
+   "formato": "carrusel",
+   "entradilla": "ERC y Podemos hacen su primer acto conjunto en Nou Barris, con la vivienda como eje, a 36 días de las elecciones del 29N.",
+   "hora": "19:38",
+   "media_id": "18123527242929261",
+   "enlace": "https://www.instagram.com/p/De4sLMIlMH_/",
+   "threads_id": "17913042849493633"
+  },
+  {
+   "slot": "2026-10-24#040",
+   "fecha": "2026-10-24T18:04:10.122361+00:00",
+   "seccion": "politica",
+   "titular": "Frente Amplio propone jubilación a los 65 y pensiones no inferiores al SMI",
+   "noticia_id": "51cafcf6462c2991",
+   "url_fuente": "https://www.20minutos.es/nacional/frente-amplio-propone-fijar-jubilacion-los-65-anos-garantizar-pensiones-iguales-superiores-salario-minimo_7052938_0.html",
+   "medios": [
+    "20minutos.es"
+   ],
+   "formato": "reel",
+   "entradilla": "La coalición calcula un coste de 20.000 millones al año y propone financiarlo con más impuestos a grandes empresas y fortunas.",
+   "hora": "20:03",
+   "media_id": "18595113208071351",
+   "enlace": "https://www.instagram.com/reel/De4vCXHidcy/",
+   "threads_id": "18025840697873039"
+  },
+  {
+   "slot": "2026-10-24#041",
+   "fecha": "2026-10-24T18:37:21.116565+00:00",
+   "seccion": "economia",
+   "titular": "España, el país de la UE con más directivas europeas sin trasponer",
+   "noticia_id": "491de083e6af3549",
+   "url_fuente": "https://www.lavanguardia.com/economia/20261024/11666750/espana-cierra-legislatura-pais-ue-mas-directivas-trasponer.html",
+   "medios": [
+    "Economía"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Según la Comisión Europea, el déficit de trasposición español es del 5,5%, más del doble de la media comunitaria.",
+   "hora": "20:36",
+   "media_id": "17872351737648167",
+   "enlace": "https://www.instagram.com/p/De4y6QYGUC_/",
+   "threads_id": "18373750459244496"
+  },
+  {
+   "slot": "2026-10-24#042",
+   "fecha": "2026-10-24T19:09:57.571173+00:00",
+   "seccion": "actualidad",
+   "titular": "Disturbios en el centro de Barcelona tras una protesta juvenil",
+   "noticia_id": "39cc3045945b485c",
+   "url_fuente": "https://elpais.com/espana/catalunya/2026-10-24/centenares-de-jovenes-violentos-destrozan-el-centro-de-barcelona.html",
+   "medios": [
+    "El País",
+    "El Mundo",
+    "20minutos"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Una concentración convocada en redes en plaza de Catalunya acabó con cargas de los Mossos, barricadas y comercios cerrados.",
+   "hora": "21:09",
+   "media_id": "17985584934107140",
+   "enlace": "https://www.instagram.com/p/De42qPaIwf2/",
+   "threads_id": "17953977324323533"
+  },
+  {
+   "slot": "2026-10-24#043",
+   "fecha": "2026-10-24T19:46:53.432526+00:00",
+   "seccion": "actualidad",
+   "titular": "Eurovisión Junior 2026: Lucas Paulano cierra la gala con 'Cuore Bello'",
+   "noticia_id": "13f6b75b2d910694",
+   "url_fuente": "https://www.20minutos.es/television/eurovision-junior-2026-directo-cancion-lucas-paulano-actuaciones-votaciones-ganador_7052699_6.html",
+   "medios": [
+    "20minutos.es",
+    "RTVE.es",
+    "ABC"
+   ],
+   "formato": "carrusel",
+   "entradilla": "España actúa la última de las 16 candidaturas en la gala de Malta, que se emite en La 1 desde las 21:00 horas.",
+   "hora": "21:45",
+   "media_id": "18106971466967993",
+   "enlace": "https://www.instagram.com/p/De463sOmWzW/",
+   "threads_id": "18099973610541924"
+  },
+  {
+   "slot": "2026-10-24#044",
+   "fecha": "2026-10-24T20:08:51.558552+00:00",
+   "seccion": "actualidad",
+   "titular": "Sánchez promete blindar el aborto en la Constitución en un mitin en Granada",
+   "noticia_id": "778a3e6d985ffbe8",
+   "url_fuente": "https://elpais.com/espana/2026-10-24/sanchez-reivindica-la-espana-de-lorca-frente-a-la-involucion-del-pp-y-vox.html",
+   "medios": [
+    "EL PAÍS",
+    "elDiario.es"
+   ],
+   "formato": "reel",
+   "entradilla": "El líder del PSOE reivindica \"la España de Lorca\" y acusa a PP y Vox de buscar \"una involución\".",
+   "hora": "22:07",
+   "media_id": "18387039145224857",
+   "enlace": "https://www.instagram.com/reel/De49VF5iKKZ/",
+   "threads_id": "18096391994240876"
+  },
+  {
+   "slot": "2026-10-24#045",
+   "fecha": "2026-10-24T20:37:41.575981+00:00",
+   "seccion": "sociedad",
+   "titular": "Confirmada la condena de 19 años a un hombre por maltratar y violar a su esposa",
+   "noticia_id": "bf149f27ccf88a68",
+   "url_fuente": "https://www.lavanguardia.com/vida/20261024/11667100/condenado-19-anos-carcel-anciano-maltratar-violar-mujer-mas-medio-siglo.html",
+   "medios": [
+    "Europa Press"
+   ],
+   "formato": "carrusel",
+   "entradilla": "El TSJA rechaza el recurso del condenado, de 78 años, por la violencia sobre su mujer durante más de 50 años de matrimonio.",
+   "hora": "22:37",
+   "media_id": "17910044781565619",
+   "enlace": "https://www.instagram.com/p/De5AqfFCY-G/",
+   "threads_id": "18042468185827974"
+  },
+  {
+   "slot": "2026-10-24#046",
+   "fecha": "2026-10-24T21:05:31.236349+00:00",
+   "seccion": "actualidad",
+   "titular": "El alcalde de Puertollano renuncia a ir en la lista del PP al Congreso",
+   "noticia_id": "918e322f65588dd8",
+   "url_fuente": "https://www.eldiario.es/castilla-la-mancha/politica/alcalde-puertollano-renuncia-lista-pp-congreso-imputado-acoso-laboral-dice-psoe_1_13612822.html",
+   "medios": [
+    "elDiario.es"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Miguel Ángel Ruiz declarará como investigado por presunto acoso laboral el 25 de noviembre, cuatro días antes de las generales.",
+   "hora": "23:04",
+   "media_id": "18154142389530113",
+   "enlace": "https://www.instagram.com/p/De5D2jWnYgn/",
+   "threads_id": "18096523859648106"
+  },
+  {
+   "slot": "2026-10-24#047",
+   "fecha": "2026-10-24T21:34:48.832357+00:00",
+   "seccion": "tecnologia",
+   "titular": "Alerta por el mensaje \"¿Podrías votar por Eliska?\": puede robarte el WhatsApp",
+   "noticia_id": "23432d0583065f58",
+   "url_fuente": "https://www.xataka.com/seguridad/podrias-votar-eliska-mensaje-inocente-que-puede-robarte-whatsapp",
+   "medios": [
+    "Xataka"
+   ],
+   "formato": "carrusel",
+   "entradilla": "Según Xataka, un falso concurso de baile usa el \"ghostpairing\" para vincular un dispositivo ajeno a tu cuenta. Hay 177 dominios fraudulentos.",
+   "hora": "23:34",
+   "media_id": "18147985642579014",
+   "enlace": "https://www.instagram.com/p/De5HOTECTQ5/",
+   "threads_id": "17995684371062167"
+  }
+ ],
+ "pausa_hasta": "2026-10-23T00:09:11.167752+00:00"
+}
