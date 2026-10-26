@@ -13,7 +13,7 @@ publicacion:
   posts_por_dia: 90          # huecos al día (90 = uno cada 16 min). Incluye los reels.
   stories_por_dia: 6         # stories "Nuevo post" (posts_por_dia + stories ≤ 96)
   # A estas horas el post sale como REEL (vídeo) en lugar de carrusel:
-  horas_reels: ["08:00", "11:00", "14:00", "17:00", "20:00", "22:00"]
+  horas_reels: []
   zona_horaria: "Europe/Madrid"
   max_hashtags: 5            # Instagram solo admite 5 hashtags por post desde dic. 2025
   diapositivas_min: 3        # tarjetas de contenido por carrusel (además de portada y cierre)
